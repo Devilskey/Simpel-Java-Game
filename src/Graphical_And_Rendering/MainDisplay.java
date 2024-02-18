@@ -1,21 +1,17 @@
 package Graphical_And_Rendering;
 
 import Handlers.KeyboardHandler;
-import Graphical_And_Rendering.Scenes.SceneManager;
+import Handlers.SceneManager;
 import Statics.GameData;
 import objects.RenderSceneData;
-import objects.Vector2;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 
 public class MainDisplay extends Canvas {
-    public static int PixelSize = 64;
-    private final Vector2 size;
     public KeyboardHandler key = new KeyboardHandler();
 
-    public MainDisplay(Vector2 size){
-        this.size = size;
+    public MainDisplay(){
         addKeyListener(key);
     }
 
@@ -36,6 +32,7 @@ public class MainDisplay extends Canvas {
             graphics.drawImage(SceneData.img, (int)SceneData.pos.GetX(), (int)SceneData.pos.GetY(), (int)GameData.WindowSize.GetX(), (int)GameData.WindowSize.GetY(), null);
         else
             graphics.drawImage(SceneData.img, (int)SceneData.pos.GetX(), (int)SceneData.pos.GetY(), null);
+
         Buffer.show();
         GameData.fps = (int) (1000000000.0  / ( System.nanoTime() - timeLastFrame));
 
