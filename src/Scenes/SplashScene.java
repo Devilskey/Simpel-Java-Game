@@ -35,7 +35,6 @@ public class SplashScene implements IScene {
         SceneImg = new BufferedImage((int)GameData.WindowSize.GetX(), (int)GameData.WindowSize.GetY(), BufferedImage.TYPE_INT_RGB);
 
         RenderScene();
-
     }
 
     public void RenderScene(){
