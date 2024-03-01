@@ -30,14 +30,15 @@ public class SplashScene implements IScene {
             e.printStackTrace();
         }
     }
+
     @Override
     public void Update() {
-        SceneImg = new BufferedImage((int)GameData.WindowSize.GetX(), (int)GameData.WindowSize.GetY(), BufferedImage.TYPE_INT_RGB);
-
-        RenderScene();
+        if(KeyboardHandler.Key_Space){
+            SceneManager.SwitchLoadedScene(new MainScene());
+        }
     }
-
-    public void RenderScene(){
+    @Override
+    public void UpdateRender(){
         int Width = (int)GameData.WindowSize.GetX() / 2;
         int height = (int)GameData.WindowSize.GetY() / 2;
         int LogoSize = 500 * ((int)GameData.WindowSize.GetY() / 500);
@@ -49,9 +50,9 @@ public class SplashScene implements IScene {
         scenegraphics.setColor(Color.black);
         scenegraphics.drawString(PressSpace, Width - 20, (int)(height * 1.5f) );
 
-        if(KeyboardHandler.Key_Space){
-            SceneManager.SwitchLoadedScene(new MainScene());
-        }
+
+        SceneImg = new BufferedImage((int)GameData.WindowSize.GetX(), (int)GameData.WindowSize.GetY(), BufferedImage.TYPE_INT_RGB);
+
     }
 
     @Override

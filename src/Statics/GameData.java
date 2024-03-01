@@ -8,7 +8,8 @@ public class GameData {
     public static int PixelSize = 64;
     public static int TileSize = 32;
     public static int SpriteSize = 16;
-    public static int fps = 0;
+    public static float fps = 0;
     public static float DeltaTime = 0.0001f;
     public static KeyboardHandler key;
+    public static float GameThreadDeltaTime = 0;
 }

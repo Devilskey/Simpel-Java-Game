@@ -20,12 +20,12 @@ public class MainScene implements IScene {
     BufferedImage SceneImg = new BufferedImage(SceneWidth, SceneHeight, BufferedImage.TYPE_INT_RGB);
     BufferedImage Logo;
     BufferedImage tileMapImg;
-
     public boolean MoveCam;
     public boolean MoveImage;
-    Camera cam ;
+    private final Camera cam;
     private MainWorldTiles WorldTile;
-    public float MovementSpeed = 800;
+
+    public float MovementSpeed = 1;
 
     public MainScene(){
         PixelArray = new int[SceneHeight / GameData.PixelSize][SceneWidth / GameData.PixelSize];
@@ -43,14 +43,14 @@ public class MainScene implements IScene {
         // FPS will go from between 10.000 / 3000 to 700/ 400
         WorldTile.DrawMap(SceneImg);
     }
-    public void RenderScene(){
+    @Override
+    public void UpdateRender(){
+        WorldTile.DrawAnimationMap(SceneImg);
     }
 
     @Override
     public void Update() {
-        RenderScene();
         cam.MoveCamera();
-
     }
 
     @Override

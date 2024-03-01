@@ -2,22 +2,29 @@ package Scenes.MainScene;
 
 import Graphical_And_Rendering.Tiles.ImageHandler;
 import Statics.GameData;
-import objects.Tile;
+import objects.Tiles.AnimatedTile;
+import objects.Tiles.AnimationTile;
+import objects.Tiles.Tile;
+import objects.Vector2;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainWorldTiles {
     public Tile Grass;
     public Tile Dirt;
-    public Tile Water;
+    public AnimatedTile Water = new AnimatedTile(3);
+    private List<AnimationTile> AnimatedTileMap = new ArrayList<AnimationTile>();
     public Tile Flower;
-    private String TileMapLocation = "src/assets/test/WorstSpriteSheetEver.png";
-    private String MapLocation = "src/Scenes/MainScene/World/Map.png";
-    BufferedImage WorldMap;
+    private final String TileMapLocation = "src/assets/test/WorstSpriteSheetEver.png";
+    private final String MapLocation = "src/Scenes/MainScene/World/Map.png";
+    private BufferedImage WorldMap;
+
 
     public MainWorldTiles(){
         try {
@@ -27,7 +34,11 @@ public class MainWorldTiles {
             Grass = ImageHandler.GetTile(TileMap, 0, 0, "Grass",  new Color(0, 255, 0)); //#008000
             Dirt = ImageHandler.GetTile(TileMap, 0, 16, "Dirt", new Color(255, 200, 0)); //#FFA500
 
-            Water = ImageHandler.GetTile(TileMap, 16, 16, "Grass", new Color(0,0, 255)); //#0000FF
+            Water.AnimationTiles[0] = ImageHandler.GetImage(TileMap, 16, 16);
+            Water.AnimationTiles[1] = ImageHandler.GetImage(TileMap, 0, 32);
+            Water.AnimationTiles[2] = ImageHandler.GetImage(TileMap, 16, 32);
+            Water.MapColor = new Color(0, 0, 255); //#0000FF
+
             Flower = ImageHandler.GetTile(TileMap, 16, 0, "Flower", Color.BLUE); //#0000FF
 
 
@@ -35,16 +46,24 @@ public class MainWorldTiles {
             ex.printStackTrace();
         }
     }
-
     public void DrawMap(BufferedImage Scene){
         Graphics scene = Scene.getGraphics();
         for (int x = 0; x < WorldMap.getHeight(); x++) {
             for (int y = 0; y < WorldMap.getHeight(); y++) {
-                scene.drawImage(PixelEqualsSprite(x, y), x * GameData.PixelSize, y * GameData.PixelSize, GameData.PixelSize, GameData.PixelSize, null);
-
+                PixelEqualsSprite(x, y);
+               scene.drawImage(PixelEqualsSprite(x, y), x * GameData.PixelSize, y * GameData.PixelSize, GameData.PixelSize, GameData.PixelSize, null);
             }
         }
     }
+    //Color.Black == none
+    public void DrawAnimationMap(BufferedImage Scene){
+        Graphics scene = Scene.getGraphics();
+        for (int x = 0; x < AnimatedTileMap.size(); x++) {
+            AnimationTile tile = AnimatedTileMap.get(x);
+            scene.drawImage(tile.image.SwitchState(), (int) tile.Pos.GetX() * GameData.PixelSize, (int)tile.Pos.GetY() * GameData.PixelSize, GameData.PixelSize, GameData.PixelSize, null);
+        }
+    }
+
     public BufferedImage PixelEqualsSprite(int x, int y){
         int pixelData  = WorldMap.getRGB(x, y);
 
@@ -52,18 +71,15 @@ public class MainWorldTiles {
         System.out.println(" TC: " + pixelData + " : MC: " + Grass.MapColor);
 
         if(pixelData == Grass.MapColor.hashCode()) {
-            System.out.println("Grass");
             return Grass.image;
         }
         if(pixelData == Dirt.MapColor.hashCode()) {
-            System.out.println("Dirt");
             return Dirt.image;
         }
         if(pixelData == Water.MapColor.hashCode()){
-            System.out.println("Water");
-            return Water.image;
+            AnimatedTileMap.add(new AnimationTile("Water", Water, new Vector2(x, y)));
+            return Water.AnimationTiles[0];
         }
         return Flower.image;
-
     }
 }

@@ -17,7 +17,7 @@ public class MainDisplay extends Canvas {
 
     public void UpdateDisplay () {
         // System.out.println("FPS: " + GameData.fps);
-        SceneManager.SceneLoaded.Update();
+        SceneManager.SceneLoaded.UpdateRender();
     }
 
     public void Render(RenderSceneData SceneData){
@@ -34,7 +34,7 @@ public class MainDisplay extends Canvas {
             graphics.drawImage(SceneData.img, (int)SceneData.pos.GetX(), (int)SceneData.pos.GetY(), null);
 
         Buffer.show();
-        GameData.fps = (int) (1000000000.0  / ( System.nanoTime() - timeLastFrame));
-
+        GameData.DeltaTime = (float) 1000 / ( System.nanoTime() -  timeLastFrame);
+        GameData.fps = 1 / GameData.DeltaTime;
     }
 }

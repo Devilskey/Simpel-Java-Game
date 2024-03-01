@@ -30,16 +30,13 @@ public class Camera {
 
     public void MoveCamera () {
         if (KeyboardHandler.Key_A)
-            pos.addX(MovementSpeed / GameData.fps);
-
+            pos.addX(MovementSpeed * GameData.GameThreadDeltaTime / 300);
         if (KeyboardHandler.Key_D)
-            pos.addX(-(MovementSpeed / GameData.fps));
+            pos.addX(-(MovementSpeed * GameData.GameThreadDeltaTime / 300));
         if (KeyboardHandler.Key_S)
-            pos.addY(-MovementSpeed / GameData.fps);
+            pos.addY(-MovementSpeed * GameData.GameThreadDeltaTime / 300);
         if (KeyboardHandler.Key_W)
-            pos.addY(MovementSpeed / GameData.fps);
+            pos.addY(MovementSpeed * GameData.GameThreadDeltaTime / 300);
         BordersCam();
-
     }
-
 }
