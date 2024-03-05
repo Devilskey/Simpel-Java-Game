@@ -24,8 +24,7 @@ public class MainScene implements IScene {
     public boolean MoveImage;
     private final Camera cam;
     private MainWorldTiles WorldTile;
-
-    public float MovementSpeed = 1;
+    public float MovementSpeed = 5;
 
     public MainScene(){
         PixelArray = new int[SceneHeight / GameData.PixelSize][SceneWidth / GameData.PixelSize];
@@ -39,7 +38,7 @@ public class MainScene implements IScene {
         WorldTile = new MainWorldTiles();
         SceneImg.createGraphics();
         
-        //Please DONT PUT THIS LINE IN THE UPDATE YES IT WILL FUCK EVERYTHING UP
+        // Please DONT PUT THIS LINE IN THE UPDATE YES IT WILL FUCK EVERYTHING UP
         // FPS will go from between 10.000 / 3000 to 700/ 400
         WorldTile.DrawMap(SceneImg);
     }

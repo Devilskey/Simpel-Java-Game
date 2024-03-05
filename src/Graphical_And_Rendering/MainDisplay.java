@@ -11,6 +11,8 @@ import java.awt.image.BufferStrategy;
 public class MainDisplay extends Canvas {
     public KeyboardHandler key = new KeyboardHandler();
 
+    private long timeLastFrame = System.nanoTime();;
+
     public MainDisplay(){
         addKeyListener(key);
     }
@@ -21,7 +23,6 @@ public class MainDisplay extends Canvas {
     }
 
     public void Render(RenderSceneData SceneData){
-        long timeLastFrame = System.nanoTime();
         BufferStrategy Buffer = this.getBufferStrategy();
         if(Buffer == null){
             createBufferStrategy(1);
@@ -34,7 +35,7 @@ public class MainDisplay extends Canvas {
             graphics.drawImage(SceneData.img, (int)SceneData.pos.GetX(), (int)SceneData.pos.GetY(), null);
 
         Buffer.show();
-        GameData.DeltaTime = (float) 1000 / ( System.nanoTime() -  timeLastFrame);
-        GameData.fps = 1 / GameData.DeltaTime;
+        GameData.fps = (int) (1000000000.0  / ( System.nanoTime() - timeLastFrame));
+        timeLastFrame = System.nanoTime();
     }
 }

@@ -50,9 +50,9 @@ public class SplashScene implements IScene {
         scenegraphics.setColor(Color.black);
         scenegraphics.drawString(PressSpace, Width - 20, (int)(height * 1.5f) );
 
-
-        SceneImg = new BufferedImage((int)GameData.WindowSize.GetX(), (int)GameData.WindowSize.GetY(), BufferedImage.TYPE_INT_RGB);
-
+        if(KeyboardHandler.Key_Space){
+            SceneManager.SwitchLoadedScene(new MainScene());
+        }
     }
 
     @Override

@@ -11,5 +11,4 @@ public class GameData {
     public static float fps = 0;
     public static float DeltaTime = 0.0001f;
     public static KeyboardHandler key;
-    public static float GameThreadDeltaTime = 0;
 }

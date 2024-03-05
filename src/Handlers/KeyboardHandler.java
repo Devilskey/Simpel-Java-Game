@@ -12,6 +12,7 @@ public class KeyboardHandler implements KeyListener {
     public static Boolean Key_Space = false;
 
     public static void CheckIfButtonMapIspressed() {
+        System.out.println("Yes");
         Key_W = KeyCodePressed[KeyEvent.VK_W];
         Key_S = KeyCodePressed[KeyEvent.VK_S];
         Key_A = KeyCodePressed[KeyEvent.VK_A];

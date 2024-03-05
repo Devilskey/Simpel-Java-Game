@@ -13,7 +13,7 @@ public class AnimatedTile {
         AnimationTiles = new BufferedImage[SetArray];
     }
 
-    public int AnimatedCoolDown = 1000;
+    public int AnimatedCoolDown = 10;
     public BufferedImage[] AnimationTiles;
     int State = 0;
     int FramesPassed;
