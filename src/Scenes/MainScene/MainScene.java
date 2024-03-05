@@ -24,7 +24,7 @@ public class MainScene implements IScene {
     public boolean MoveImage;
     private final Camera cam;
     private MainWorldTiles WorldTile;
-    public float MovementSpeed = 5;
+    public float MovementSpeed = 800;
 
     public MainScene(){
         PixelArray = new int[SceneHeight / GameData.PixelSize][SceneWidth / GameData.PixelSize];
