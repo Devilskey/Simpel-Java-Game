@@ -35,7 +35,7 @@ public class MainDisplay extends Canvas {
             graphics.drawImage(SceneData.img, (int)SceneData.pos.GetX(), (int)SceneData.pos.GetY(), null);
 
         Buffer.show();
-        GameData.fps = (int) (1000000000.0  / ( System.nanoTime() - timeLastFrame));
+        GameData.fps = (float) (1e6  / ( System.nanoTime() - timeLastFrame));
         timeLastFrame = System.nanoTime();
     }
 }
