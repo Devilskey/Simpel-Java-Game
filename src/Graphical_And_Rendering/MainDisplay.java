@@ -7,6 +7,7 @@ import objects.RenderSceneData;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
+import java.awt.image.ImageObserver;
 
 public class MainDisplay extends Canvas {
     public KeyboardHandler key = new KeyboardHandler();
@@ -16,7 +17,6 @@ public class MainDisplay extends Canvas {
     }
 
     public void UpdateDisplay () {
-        // System.out.println("FPS: " + GameData.fps);
         SceneManager.SceneLoaded.Update();
     }
 
@@ -28,13 +28,10 @@ public class MainDisplay extends Canvas {
             return;
         }
         Graphics graphics = Buffer.getDrawGraphics();
-        if(SceneData.img.getHeight() < GameData.WindowSize.GetY() && SceneData.img.getWidth() <  GameData.WindowSize.GetX())
-            graphics.drawImage(SceneData.img, (int)SceneData.pos.GetX(), (int)SceneData.pos.GetY(), (int)GameData.WindowSize.GetX(), (int)GameData.WindowSize.GetY(), null);
-        else
-            graphics.drawImage(SceneData.img, (int)SceneData.pos.GetX(), (int)SceneData.pos.GetY(), null);
+        SceneData.RenderImg(graphics);
 
         Buffer.show();
-        GameData.fps = (int) (1000000000.0  / ( System.nanoTime() - timeLastFrame));
 
+        GameData.fps = (int) (1000000000.0  / ( System.nanoTime() - timeLastFrame));
     }
 }

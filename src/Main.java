@@ -1,9 +1,9 @@
 import Graphical_And_Rendering.MainDisplay;
-import Scenes.SplashScene;
 import Handlers.KeyboardHandler;
 import Handlers.SceneManager;
+import Scenes.MainScene.MainScene;
 import Statics.GameData;
-import objects.Vector2;
+import objects.SizeObjects.Vector2;
 
 import javax.swing.*;
 
@@ -17,7 +17,7 @@ public class Main {
 
     public static void main(String[] args)
     {
-        SceneManager.SwitchLoadedScene(new SplashScene());
+        SceneManager.SwitchLoadedScene(new MainScene());
 
         display = new MainDisplay();
 
@@ -25,11 +25,11 @@ public class Main {
         MainWindow.pack();
         MainWindow.setFocusable(true);
         MainWindow.setFocusTraversalKeysEnabled(false);
-        MainWindow.setTitle(title);
+        MainWindow.setTitle(title + " Fps = " + GameData.fps);
         MainWindow.setSize((int)ScreenSize.GetX(), (int)ScreenSize.GetY());
         MainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         MainWindow.setLocationRelativeTo(null);
-        // MainWindow.setResizable(false);
+        MainWindow.setResizable(false);
         MainWindow.setVisible(true);
         KeyboardHandler.CheckIfButtonMapIspressed();
 
@@ -43,6 +43,7 @@ public class Main {
     static void WindowData(){
         GameData.WindowSize.SetY(MainWindow.getHeight());
         GameData.WindowSize.SetX(MainWindow.getWidth());
+        MainWindow.setTitle(title + " Fps = " + GameData.fps);
     }
 
     static void GameLoop(){

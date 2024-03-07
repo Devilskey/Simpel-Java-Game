@@ -1,4 +1,4 @@
-package objects;
+package objects.SizeObjects;
 
 public class Vector2 {
     private float  x;

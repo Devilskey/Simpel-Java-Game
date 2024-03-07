@@ -1,8 +1,10 @@
 package Scenes.MainScene;
 
 import Graphical_And_Rendering.Tiles.ImageHandler;
+import Statics.Debug;
 import Statics.GameData;
 import objects.Tile;
+import objects.SizeObjects.Vector2;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -27,7 +29,7 @@ public class MainWorldTiles {
             Grass = ImageHandler.GetTile(TileMap, 0, 0, "Grass",  new Color(0, 255, 0)); //#008000
             Dirt = ImageHandler.GetTile(TileMap, 0, 16, "Dirt", new Color(255, 200, 0)); //#FFA500
 
-            Water = ImageHandler.GetTile(TileMap, 16, 16, "Grass", new Color(0,0, 255)); //#0000FF
+            Water = ImageHandler.GetTile(TileMap, 16, 16, "Water", new Color(0,0, 255)); //#0000FF
             Flower = ImageHandler.GetTile(TileMap, 16, 0, "Flower", Color.BLUE); //#0000FF
 
 
@@ -36,34 +38,51 @@ public class MainWorldTiles {
         }
     }
 
-    public void DrawMap(BufferedImage Scene){
-        Graphics scene = Scene.getGraphics();
-        for (int x = 0; x < WorldMap.getHeight(); x++) {
-            for (int y = 0; y < WorldMap.getHeight(); y++) {
-                scene.drawImage(PixelEqualsSprite(x, y), x * GameData.PixelSize, y * GameData.PixelSize, GameData.PixelSize, GameData.PixelSize, null);
+    public Tile[][] GetMapTiles(int CamX, int CamY) {
+        int posX = CamX / GameData.PixelSize;
+        int posY = CamY / GameData.PixelSize;
 
+        if(posX <= 0)
+            posX = 1;
+        if(posY <= 0)
+            posY = 1;
+
+        int WindowWidth = ((int)GameData.WindowSize.GetX() / GameData.PixelSize) + 4;
+        int WindowHeight = ((int)GameData.WindowSize.GetY() / GameData.PixelSize) + 4;
+
+        BufferedImage MapPiece = WorldMap.getSubimage(posX, posY, WindowWidth, WindowHeight);
+
+        Tile[][] map = new Tile[WindowHeight][WindowWidth];
+        for (int x = 0; x < MapPiece.getWidth(); x++) {
+            for (int y = 0; y < MapPiece.getHeight(); y++) {
+                map[y][x] = PixelEqualsSprite(x, y, MapPiece);
             }
         }
-    }
-    public BufferedImage PixelEqualsSprite(int x, int y){
-        int pixelData  = WorldMap.getRGB(x, y);
 
-        System.out.println((pixelData == Grass.MapColor.hashCode()));
-        System.out.println(" TC: " + pixelData + " : MC: " + Grass.MapColor);
+        return map;
+    }
+
+    public Vector2 GetSizeMapPixels(){
+        return new Vector2(0,0);
+    }
+    public Tile PixelEqualsSprite(int x, int y, BufferedImage PieceMap){
+        int pixelData  = PieceMap.getRGB(x, y);
+
+        if(Debug.DebugPixelEqualsTile) {
+            System.out.println((pixelData == Grass.MapColor.hashCode()));
+            System.out.println(" TC: " + pixelData + " : MC: " + Grass.MapColor);
+        }
 
         if(pixelData == Grass.MapColor.hashCode()) {
-            System.out.println("Grass");
-            return Grass.image;
+            return Grass;
         }
         if(pixelData == Dirt.MapColor.hashCode()) {
-            System.out.println("Dirt");
-            return Dirt.image;
+            return Dirt;
         }
         if(pixelData == Water.MapColor.hashCode()){
-            System.out.println("Water");
-            return Water.image;
+            return Water;
         }
-        return Flower.image;
-
+        return Flower;
     }
+
 }
