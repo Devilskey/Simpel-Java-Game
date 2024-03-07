@@ -1,5 +1,6 @@
 package objects;
 
+import Debuger.DebugWindow;
 import Handlers.KeyboardHandler;
 import Statics.GameData;
 import objects.SizeObjects.Vector2;
@@ -13,19 +14,21 @@ public class Camera {
     public Camera (Vector2 pos, float MovementSpeed, int MaxX, int MaxY){
         this.pos = pos;
         this.MovementSpeed = MovementSpeed;
-        this.MaxX = MaxX;
-        this.MaxY = MaxY;
+        this.MaxX = MaxX * GameData.PixelSize;
+        this.MaxY = MaxY * GameData.PixelSize;
     }
 
     public void BordersCam(){
-        if (pos.GetY() >= 0)
-            pos.SetY(0);
-        if (pos.GetX() >= 0)
-            pos.SetX(0);
-        if (pos.GetY() <= -(MaxY - GameData.WindowSize.GetY()))
-            pos.SetY(-(MaxY - GameData.WindowSize.GetY()));
-        if (pos.GetX() <= -(MaxX - GameData.WindowSize.GetX()))
-            pos.SetX(-(MaxX - GameData.WindowSize.GetX()));
+        DebugWindow.log(" X " + pos.GetX() + " Y " + pos.GetY());
+
+        if (pos.GetY() <= GameData.PixelSize)
+            pos.SetY(GameData.PixelSize);
+        if (pos.GetX() <= GameData.PixelSize)
+            pos.SetX(GameData.PixelSize);
+        if (pos.GetY() <= -(MaxY - GameData.WindowSize.GetHeight()))
+            pos.SetY((MaxY - GameData.WindowSize.GetHeight()));
+        if (pos.GetX() <= -(MaxX - GameData.WindowSize.GetWidth()))
+            pos.SetX((MaxX - GameData.WindowSize.GetWidth()));
     }
 
     public void MoveCamera () {
@@ -38,8 +41,6 @@ public class Camera {
             pos.addY(MovementSpeed / GameData.fps);
         if (KeyboardHandler.Key_W)
             pos.addY(-(MovementSpeed / GameData.fps));
-        // BordersCam();
-
+         BordersCam();
     }
-
 }

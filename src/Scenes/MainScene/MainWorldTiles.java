@@ -1,10 +1,11 @@
 package Scenes.MainScene;
 
-import Graphical_And_Rendering.Tiles.ImageHandler;
-import Statics.Debug;
+import Graphical_And_Rendering.ImageHandler;
+import Statics.DebugSettings;
 import Statics.GameData;
-import objects.Tile;
-import objects.SizeObjects.Vector2;
+import objects.SizeObjects.Scale;
+import objects.Tiles.AnimatedTiles;
+import objects.Tiles.Tile;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -15,7 +16,7 @@ import java.io.IOException;
 public class MainWorldTiles {
     public Tile Grass;
     public Tile Dirt;
-    public Tile Water;
+    public AnimatedTiles Water;
     public Tile Flower;
     private String TileMapLocation = "src/assets/test/WorstSpriteSheetEver.png";
     private String MapLocation = "src/Scenes/MainScene/World/Map.png";
@@ -24,12 +25,19 @@ public class MainWorldTiles {
     public MainWorldTiles(){
         try {
             BufferedImage TileMap = ImageIO.read(new File(TileMapLocation));
+            Water = new AnimatedTiles(3, "Water", new Color(0,0, 255));
+
             WorldMap = ImageIO.read(new File(MapLocation));
 
             Grass = ImageHandler.GetTile(TileMap, 0, 0, "Grass",  new Color(0, 255, 0)); //#008000
             Dirt = ImageHandler.GetTile(TileMap, 0, 16, "Dirt", new Color(255, 200, 0)); //#FFA500
 
-            Water = ImageHandler.GetTile(TileMap, 16, 16, "Water", new Color(0,0, 255)); //#0000FF
+            Water.States[0] = ImageHandler.GetAnimatedTile(TileMap, 16, 16); //#0000FF
+            Water.States[1] = ImageHandler.GetAnimatedTile(TileMap, 0, 32); //#0000FF
+            Water.States[2] = ImageHandler.GetAnimatedTile(TileMap, 16, 32 ); //#0000FF
+
+            GameData.Saved = TileMap;
+
             Flower = ImageHandler.GetTile(TileMap, 16, 0, "Flower", Color.BLUE); //#0000FF
 
 
@@ -47,8 +55,8 @@ public class MainWorldTiles {
         if(posY <= 0)
             posY = 1;
 
-        int WindowWidth = ((int)GameData.WindowSize.GetX() / GameData.PixelSize) + 4;
-        int WindowHeight = ((int)GameData.WindowSize.GetY() / GameData.PixelSize) + 4;
+        int WindowWidth = ((int)GameData.WindowSize.GetWidth() / GameData.PixelSize) + 4;
+        int WindowHeight = ((int)GameData.WindowSize.GetHeight() / GameData.PixelSize) + 4;
 
         BufferedImage MapPiece = WorldMap.getSubimage(posX, posY, WindowWidth, WindowHeight);
 
@@ -58,17 +66,17 @@ public class MainWorldTiles {
                 map[y][x] = PixelEqualsSprite(x, y, MapPiece);
             }
         }
-
+        Water.NextState();
         return map;
     }
 
-    public Vector2 GetSizeMapPixels(){
-        return new Vector2(0,0);
+    public Scale GetSizeMapPixels(){
+        return new Scale(WorldMap.getWidth(),WorldMap.getHeight());
     }
     public Tile PixelEqualsSprite(int x, int y, BufferedImage PieceMap){
         int pixelData  = PieceMap.getRGB(x, y);
 
-        if(Debug.DebugPixelEqualsTile) {
+        if(DebugSettings.DebugPixelEqualsTile) {
             System.out.println((pixelData == Grass.MapColor.hashCode()));
             System.out.println(" TC: " + pixelData + " : MC: " + Grass.MapColor);
         }
@@ -80,7 +88,7 @@ public class MainWorldTiles {
             return Dirt;
         }
         if(pixelData == Water.MapColor.hashCode()){
-            return Water;
+            return Water.GetState();
         }
         return Flower;
     }

@@ -1,4 +1,4 @@
-package objects;
+package objects.Tiles;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

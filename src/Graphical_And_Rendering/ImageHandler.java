@@ -1,7 +1,7 @@
-package Graphical_And_Rendering.Tiles;
+package Graphical_And_Rendering;
 
 import Statics.GameData;
-import objects.Tile;
+import objects.Tiles.Tile;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -13,6 +13,12 @@ public class ImageHandler {
         newTile.image = tileMap.getSubimage(x, y, GameData.SpriteSize, GameData.SpriteSize);
         newTile.Name = Name;
         newTile.MapColor = TileColor;
+        return newTile;
+    }
+
+    public static Tile GetAnimatedTile(BufferedImage tileMap, int x, int y){
+        Tile newTile = new Tile();
+        newTile.image = tileMap.getSubimage(x, y, GameData.SpriteSize, GameData.SpriteSize);
         return newTile;
     }
 

@@ -2,9 +2,9 @@ package objects;
 
 import Statics.GameData;
 import objects.SizeObjects.Vector2;
+import objects.Tiles.Tile;
 
 import java.awt.*;
-import java.awt.image.BufferedImage;
 
 public class RenderSceneData {
     //Tile X, Y Pixels
@@ -16,8 +16,6 @@ public class RenderSceneData {
         int TilesPassedY = (int)(pos.GetY() / GameData.PixelSize);
         float CamX = pos.GetX() - TilesPassedX * GameData.PixelSize;
         float CamY = pos.GetY() -  TilesPassedY *  GameData.PixelSize;
-
-        System.out.println("CamY = " + (int)(pos.GetY() - (pos.GetY() / GameData.PixelSize)) + "Came 1 " +  (pos.GetY() / GameData.PixelSize));
 
 
         int x = -1;

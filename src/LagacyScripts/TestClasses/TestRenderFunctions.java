@@ -1,6 +1,5 @@
-package Graphical_And_Rendering.TestClasses;
+package LagacyScripts.TestClasses;
 
-import Graphical_And_Rendering.Tiles.ImageHandler;
 import Statics.GameData;
 
 import java.awt.*;

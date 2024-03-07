@@ -1,7 +1,9 @@
+import Debuger.DebugWindow;
 import Graphical_And_Rendering.MainDisplay;
 import Handlers.KeyboardHandler;
 import Handlers.SceneManager;
 import Scenes.MainScene.MainScene;
+import Statics.DebugSettings;
 import Statics.GameData;
 import objects.SizeObjects.Vector2;
 
@@ -29,9 +31,15 @@ public class Main {
         MainWindow.setSize((int)ScreenSize.GetX(), (int)ScreenSize.GetY());
         MainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         MainWindow.setLocationRelativeTo(null);
-        MainWindow.setResizable(false);
+        // MainWindow.setResizable(false);
         MainWindow.setVisible(true);
         KeyboardHandler.CheckIfButtonMapIspressed();
+
+
+        if(DebugSettings.UseDebugWindow) {
+            SwingUtilities.invokeLater(DebugWindow::new);
+            DebugWindow.log("Window Opend");
+        }
 
         while(MainWindow.isVisible()) {
 
@@ -41,8 +49,8 @@ public class Main {
         }
     }
     static void WindowData(){
-        GameData.WindowSize.SetY(MainWindow.getHeight());
-        GameData.WindowSize.SetX(MainWindow.getWidth());
+        GameData.WindowSize.SetHeight(MainWindow.getHeight());
+        GameData.WindowSize.SetWidth(MainWindow.getWidth());
         MainWindow.setTitle(title + " Fps = " + GameData.fps);
     }
 

@@ -3,7 +3,8 @@ package Scenes.MainScene;
 import Interfaces.IScene;
 import objects.Camera;
 import objects.RenderSceneData;
-import objects.Tile;
+import objects.SizeObjects.Scale;
+import objects.Tiles.Tile;
 import objects.SizeObjects.Vector2;
 
 public class MainScene implements IScene {
@@ -14,8 +15,8 @@ public class MainScene implements IScene {
 
     public MainScene(){
         WorldTile = new MainWorldTiles();
-        Vector2 MapSize = WorldTile.GetSizeMapPixels();
-        cam = new Camera(new Vector2(128,128), MovementSpeed, (int)MapSize.GetX(), (int)MapSize.GetY());
+        Scale MapSize = WorldTile.GetSizeMapPixels();
+        cam = new Camera(new Vector2(128,128), MovementSpeed, (int)MapSize.GetWidth() , (int)MapSize.GetHeight());
     }
     public void RenderScene(){
         PixelArray = WorldTile.GetMapTiles((int)cam.pos.GetX(),(int)cam.pos.GetY());

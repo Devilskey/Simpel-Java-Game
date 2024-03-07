@@ -24,11 +24,12 @@ public class MainDisplay extends Canvas {
         long timeLastFrame = System.nanoTime();
         BufferStrategy Buffer = this.getBufferStrategy();
         if(Buffer == null){
-            createBufferStrategy(1);
+            createBufferStrategy(2);
             return;
         }
         Graphics graphics = Buffer.getDrawGraphics();
         SceneData.RenderImg(graphics);
+        graphics.drawImage( GameData.Saved ,  500, 500, 64, 64, null);
 
         Buffer.show();
 
