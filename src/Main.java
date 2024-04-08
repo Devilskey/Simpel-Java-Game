@@ -14,11 +14,12 @@ public class Main {
     private static final String title = "Hello world";
     private static final JFrame MainWindow = new JFrame();
     private static MainDisplay display;
-
-    private static final Vector2 ScreenSize = new Vector2(1280, 720);
+    private static final Vector2 ScreenSize = new Vector2(500, 500);
 
     public static void main(String[] args)
     {
+        DebugSettings.StartDebugWindow();
+
         SceneManager.SwitchLoadedScene(new MainScene());
 
         display = new MainDisplay();
@@ -31,15 +32,9 @@ public class Main {
         MainWindow.setSize((int)ScreenSize.GetX(), (int)ScreenSize.GetY());
         MainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         MainWindow.setLocationRelativeTo(null);
-        // MainWindow.setResizable(false);
+        MainWindow.setResizable(false);
         MainWindow.setVisible(true);
         KeyboardHandler.CheckIfButtonMapIspressed();
-
-
-        if(DebugSettings.UseDebugWindow) {
-            SwingUtilities.invokeLater(DebugWindow::new);
-            DebugWindow.log("Window Opend");
-        }
 
         while(MainWindow.isVisible()) {
 
@@ -56,6 +51,6 @@ public class Main {
 
     static void GameLoop(){
         display.UpdateDisplay();
-        display.Render(SceneManager.RenderLoadedScene());
+        display.Render();
     }
 }

@@ -15,13 +15,16 @@ public class MainDisplay extends Canvas {
     public MainDisplay(){
         addKeyListener(key);
     }
+    long TimeLastFrame = 0;
 
     public void UpdateDisplay () {
         SceneManager.SceneLoaded.Update();
     }
 
-    public void Render(RenderSceneData SceneData){
-        long timeLastFrame = System.nanoTime();
+    public void Render(){
+        if(TimeLastFrame == 0)
+            TimeLastFrame = System.nanoTime();
+        RenderSceneData SceneData = SceneManager.SceneLoaded.RenderdScene();
         BufferStrategy Buffer = this.getBufferStrategy();
         if(Buffer == null){
             createBufferStrategy(2);
@@ -29,10 +32,11 @@ public class MainDisplay extends Canvas {
         }
         Graphics graphics = Buffer.getDrawGraphics();
         SceneData.RenderImg(graphics);
-        graphics.drawImage( GameData.Saved ,  500, 500, 64, 64, null);
+        SceneData.RenderEntities(graphics);
 
         Buffer.show();
 
-        GameData.fps = (int) (1000000000.0  / ( System.nanoTime() - timeLastFrame));
+        GameData.fps = (int) (1000000000.0  / ( System.nanoTime() - TimeLastFrame));
+        TimeLastFrame = System.nanoTime();
     }
 }

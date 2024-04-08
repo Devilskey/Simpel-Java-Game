@@ -1,9 +1,12 @@
 package Handlers;
+import abstractions.Entity;
+
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.Dictionary;
+import java.util.Enumeration;
 
 public class KeyboardHandler implements KeyListener {
-
     static boolean[] KeyCodePressed = new boolean[120];
     public static Boolean Key_W = false;
     public static Boolean Key_S = false;
@@ -26,6 +29,7 @@ public class KeyboardHandler implements KeyListener {
     public void keyReleased(KeyEvent e) {
         KeyCodePressed[e.getKeyCode()] = false;
     }
+
     @Override
     public void keyPressed(KeyEvent e) {
         KeyCodePressed[e.getKeyCode()] = true;

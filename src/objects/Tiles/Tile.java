@@ -7,5 +7,6 @@ public class Tile {
     public String Name;
     public BufferedImage image;
     public Color MapColor;
+    public boolean canCollide = false;
 
 }

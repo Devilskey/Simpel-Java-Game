@@ -10,11 +10,14 @@ public class AnimatedTiles {
     public Color MapColor;
     public int FramesPassed = 0;
     public int StateCounter = 0;
-
     public AnimatedTiles (int MaxStates, String Name, Color MapColor){
         States = new Tile[MaxStates];
         this.MapColor = MapColor;
         this.Name = Name;
+    }
+
+    public AnimatedTiles (int MaxState){
+        States = new Tile[MaxState];
     }
     public void NextState(){
         if(GameData.fps * States.length > FramesPassed) {

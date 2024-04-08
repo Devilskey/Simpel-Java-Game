@@ -11,7 +11,16 @@ public class Camera {
     private final int MaxX;
     private final int MaxY;
 
-    public Camera (Vector2 pos, float MovementSpeed, int MaxX, int MaxY){
+    public boolean LinkedToEntitie = false;
+
+    public Camera(Vector2 pos, float MovementSpeed, int MaxX, int MaxY) {
+        this.pos = pos;
+        this.MovementSpeed = MovementSpeed;
+        this.MaxX = MaxX * GameData.PixelSize;
+        this.MaxY = MaxY * GameData.PixelSize;
+    }
+    public Camera (Vector2 pos, float MovementSpeed, int MaxX, int MaxY, boolean Linked){
+        this.LinkedToEntitie = Linked;
         this.pos = pos;
         this.MovementSpeed = MovementSpeed;
         this.MaxX = MaxX * GameData.PixelSize;
@@ -19,8 +28,6 @@ public class Camera {
     }
 
     public void BordersCam(){
-        DebugWindow.log(" X " + pos.GetX() + " Y " + pos.GetY());
-
         if (pos.GetY() <= GameData.PixelSize)
             pos.SetY(GameData.PixelSize);
         if (pos.GetX() <= GameData.PixelSize)
@@ -30,16 +37,29 @@ public class Camera {
         if (pos.GetX() <= -(MaxX - GameData.WindowSize.GetWidth()))
             pos.SetX((MaxX - GameData.WindowSize.GetWidth()));
     }
+    public void MoveWithEntitie () {
+
+        // Check if the player is in the middel X OR Y of the screen so yes move Else Dont
+        // Check if the player
+        if (KeyboardHandler.Key_A)
+            pos.addX(-(MovementSpeed / GameData.fps));
+        else if (KeyboardHandler.Key_D)
+            pos.addX((MovementSpeed / GameData.fps));
+        else if (KeyboardHandler.Key_S)
+            pos.addY(MovementSpeed / GameData.fps);
+        else if (KeyboardHandler.Key_W)
+            pos.addY(-(MovementSpeed / GameData.fps));
+        BordersCam();
+    }
 
     public void MoveCamera () {
         if (KeyboardHandler.Key_A)
             pos.addX(-(MovementSpeed / GameData.fps));
-
-        if (KeyboardHandler.Key_D)
+        else if (KeyboardHandler.Key_D)
             pos.addX((MovementSpeed / GameData.fps));
-        if (KeyboardHandler.Key_S)
+       else if (KeyboardHandler.Key_S)
             pos.addY(MovementSpeed / GameData.fps);
-        if (KeyboardHandler.Key_W)
+       else if (KeyboardHandler.Key_W)
             pos.addY(-(MovementSpeed / GameData.fps));
          BordersCam();
     }

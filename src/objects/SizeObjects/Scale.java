@@ -1,32 +1,36 @@
 package objects.SizeObjects;
 
 public class Scale {
-    private float Width;
-    private float Height;
-    public Scale(float Width, float Height){
+    private int Width;
+    private int Height;
+    public Scale(int Width, int Height){
         this.Width = Width;
         this.Height = Height;
     }
 
-    public float GetWidth (){
+    public String print(){
+        return "\n    Width = " + Width + "\n    Height = " + Height;
+    }
+
+    public int GetWidth (){
         return Width;
     }
 
-    public float GetHeight(){
+    public int GetHeight(){
         return Height;
     }
-    public void SetWidth(float Width){
+    public void SetWidth(int Width){
         this.Width = Width;
     }
 
-    public void SetHeight(float Height){
+    public void SetHeight(int Height){
         this.Height = Height;
     }
 
-    public void addHeight(float add){
+    public void addHeight(int add){
         this.Height += add;
     }
-    public void addWidth(float add){
+    public void addWidth(int add){
         this.Width += add;
     }
 }
