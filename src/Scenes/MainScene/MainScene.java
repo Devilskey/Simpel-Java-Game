@@ -1,8 +1,10 @@
 package Scenes.MainScene;
 
 import Debuger.DebugWindow;
+import Handlers.Physics.ColisionHandler;
 import Interfaces.IScene;
 import abstractions.Entity;
+import enums.MoveTo;
 import objects.Camera;
 import Entities.Player;
 import objects.RenderSceneData;
@@ -28,16 +30,23 @@ public class MainScene implements IScene {
 
     @Override
     public void Update() {
-        UpdateEntities();
         RenderScene();
+        UpdateEntities();
     }
 
     public void UpdateEntities(){
-        for (Entity entity : Entities)
+        ColisionHandler.SetMap(PixelArray);
+        for (Entity entity : Entities) {
+            if(entity.CanMove){
+                entity.ObstacleUp = ColisionHandler.CanCollideWithTile(entity.Position, MoveTo.Up);
+                entity.ObstacleDown = ColisionHandler.CanCollideWithTile(entity.Position, MoveTo.Down);
+                entity.ObstacleLeft = ColisionHandler.CanCollideWithTile(entity.Position, MoveTo.Left);
+                entity.ObstacleRight = ColisionHandler.CanCollideWithTile(entity.Position, MoveTo.Right);
+            }
             entity.Update();
+        }
 
-        cam.MoveCamera();
-
+        cam.MoveWithEntitie(Entities[0].Position);
     }
 
     @Override

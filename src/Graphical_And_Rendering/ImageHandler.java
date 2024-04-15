@@ -8,11 +8,12 @@ import java.awt.image.BufferedImage;
 
 public class ImageHandler {
 
-    public static Tile GetTile(BufferedImage tileMap, int x, int y, String Name, Color TileColor){
+    public static Tile GetTile(BufferedImage tileMap, int x, int y, String Name, Color TileColor, boolean canCollide){
         Tile newTile = new Tile();
         newTile.image = tileMap.getSubimage(x, y, GameData.SpriteSize, GameData.SpriteSize);
         newTile.Name = Name;
         newTile.MapColor = TileColor;
+        newTile.canCollide = canCollide;
         return newTile;
     }
 

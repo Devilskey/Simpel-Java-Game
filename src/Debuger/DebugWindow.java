@@ -51,6 +51,26 @@ public class DebugWindow extends JFrame {
         setVisible(true);
     }
 
+    public static void log(float number) {
+        String timeStamp = new SimpleDateFormat("HH:mm:ss").format(new Date());
+
+        String logMessage = "[" + timeStamp + "] " + number + "\n";
+
+        logTextArea.append(logMessage);
+
+        logTextArea.setCaretPosition(logTextArea.getDocument().getLength());
+    }
+
+    public static void log(int number) {
+        String timeStamp = new SimpleDateFormat("HH:mm:ss").format(new Date());
+
+        String logMessage = "[" + timeStamp + "] " + number + "\n";
+
+        logTextArea.append(logMessage);
+
+        logTextArea.setCaretPosition(logTextArea.getDocument().getLength());
+    }
+
     public static void log(String message) {
         String timeStamp = new SimpleDateFormat("HH:mm:ss").format(new Date());
 

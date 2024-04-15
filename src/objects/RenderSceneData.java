@@ -20,7 +20,6 @@ public class RenderSceneData {
             if(GameLogicHandler.VisibleOnScreen(PositionScreen)) {
                 graphics.drawImage(entity.renderSprite(), (int) PositionScreen.GetX(), (int) PositionScreen.GetY(), entity.Size.GetWidth(), entity.Size.GetHeight(), null);
             }
-
         }
     }
 
@@ -30,14 +29,14 @@ public class RenderSceneData {
         float CamX = pos.GetX() - TilesPassedX * GameData.PixelSize;
         float CamY = pos.GetY() -  TilesPassedY * GameData.PixelSize;
 
-        int x = -1;
-        int y = -1;
+        int x = 0;
+        int y = 0;
         for (Tile[] pixel : Pixels){
             for (Tile tile : pixel){
-                graphics.drawImage(tile.image, ((x * GameData.PixelSize) - (int) CamX), ((y * GameData.PixelSize) - (int) CamY), GameData.PixelSize , GameData.PixelSize, null);
+                graphics.drawImage(tile.image, ((x * GameData.PixelSize)  - (int) CamX), ((y * GameData.PixelSize) - (int) CamY), GameData.PixelSize , GameData.PixelSize, null);
                 x++;
             }
-            x = -1;
+            x = 0;
             y++;
         }
     }

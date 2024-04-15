@@ -15,11 +15,12 @@ public abstract class Entity {
     public Scale Size = new Scale(0,0);
     public Vector2 Position = new Vector2(0,0);
     public BufferedImage SpriteSheet;
-
     public BufferedImage BaseSprite;
     public abstract BufferedImage renderSprite();
     public abstract void Start();
     public abstract void Update();
+    public boolean CanMove = false;
+    public boolean ObstacleUp, ObstacleDown, ObstacleLeft, ObstacleRight;
     public Entity(String SpriteSheatPath){
         try {
             SpriteSheet = ImageIO.read(new File(SpriteSheatPath));

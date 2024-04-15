@@ -2,6 +2,7 @@ package Graphical_And_Rendering;
 
 import Handlers.KeyboardHandler;
 import Handlers.SceneManager;
+import Statics.DebugSettings;
 import Statics.GameData;
 import objects.RenderSceneData;
 
@@ -33,6 +34,9 @@ public class MainDisplay extends Canvas {
         Graphics graphics = Buffer.getDrawGraphics();
         SceneData.RenderImg(graphics);
         SceneData.RenderEntities(graphics);
+
+        if(DebugSettings.RenderMap)
+            graphics.drawImage(DebugSettings.Map, 375, 350, 100, 100, null);
 
         Buffer.show();
 

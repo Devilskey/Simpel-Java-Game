@@ -42,15 +42,11 @@ public class MainWorldTiles {
         int posX = CamX / GameData.PixelSize;
         int posY = CamY / GameData.PixelSize;
 
-        if(posX <= 0)
-            posX = 1;
-        if(posY <= 0)
-            posY = 1;
-
         int WindowWidth = ((int)GameData.WindowSize.GetWidth() / GameData.PixelSize) + 4;
         int WindowHeight = ((int)GameData.WindowSize.GetHeight() / GameData.PixelSize) + 4;
 
         BufferedImage MapPiece = WorldMap.getSubimage(posX, posY, WindowWidth, WindowHeight);
+        DebugSettings.Map = MapPiece;
 
         Tile[][] map = new Tile[WindowHeight][WindowWidth];
         for (int x = 0; x < MapPiece.getWidth(); x++) {
@@ -78,31 +74,31 @@ public class MainWorldTiles {
     }
 
     private void LoadTiles(BufferedImage TileMap){
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 0, 0, "Grass",  new Color(0, 255, 0))); //#008000
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 0, 16, "Grass Water",  new Color(0, 220, 0))); //#008000
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 16, 16, "Grass Water Corner Top",  new Color(0, 200, 0))); //#008000
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 16, 48, "Grass Water Corner Side Left",  new Color(0, 180, 0))); //#008000
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 32, 48, "Grass Water Corner Side Right",  new Color(0, 164, 0))); //#008000
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 32, 16, "Grass Water Corner Side Right",  new Color(79, 183, 79))); //#008000
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 0, 0, "Grass",  new Color(0, 255, 0), false)); //#008000
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 0, 16, "Grass Water",  new Color(0, 220, 0),true)); //#008000
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 16, 16, "Grass Water Corner Top",  new Color(0, 200, 0), true)); //#008000
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 16, 48, "Grass Water Corner Side Left",  new Color(0, 180, 0), true)); //#008000
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 32, 48, "Grass Water Corner Side Right",  new Color(0, 164, 0), true)); //#008000
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 32, 16, "Grass Water Corner Side Right",  new Color(79, 183, 79), true)); //#008000
 
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 48, 48, "Grass water corner 4", new Color(0, 160, 0)));
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 0, 64, "Grass water corner 5", new Color(0, 150, 0)));
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 0, 96, "Grass water corner 6", new Color(140, 0, 255))); //#0000FF
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 48, 80, "Grass water corner 7", new Color(121, 0, 220))); //#0000FF
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 32, 80, "Grass top water corner 2", new Color(102, 0, 189))); //#0000FF
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 16, 96, "Grass water corner 9", new Color(80, 29, 122))); //#0000FF
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 32, 96, "Grass water corner 9", new Color(98, 57, 131))); //#0000FF
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 0, 112, "Grass water corner 10", new Color(68, 35, 89))); //#0000FF
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 48, 48, "Grass water corner 4", new Color(0, 160, 0), true));
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 0, 64, "Grass water corner 5", new Color(0, 150, 0), true));
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 0, 96, "Grass water corner 6", new Color(140, 0, 255), true)); //#0000FF
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 48, 80, "Grass water corner 7", new Color(121, 0, 220), true)); //#0000FF
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 32, 80, "Grass top water corner 2", new Color(102, 0, 189), true)); //#0000FF
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 16, 96, "Grass water corner 9", new Color(80, 29, 122), true)); //#0000FF
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 32, 96, "Grass water corner 9", new Color(98, 57, 131), true)); //#0000FF
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 0, 112, "Grass water corner 10", new Color(68, 35, 89), true)); //#0000FF
 
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 0, 48, "GrassTop", new Color(255, 200, 0))); //#FFA500
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 48, 32, "DirtTop", new Color(240, 200, 0))); //#FFA500
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 16, 64, "DirtLong", new Color(240, 180, 0))); //#FFA500
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 48, 64, "Dirt Water", new Color(188, 240, 0))); //#FFA500
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 0, 48, "GrassTop", new Color(255, 200, 0), true)); //#FFA500
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 48, 32, "DirtTop", new Color(240, 200, 0), true)); //#FFA500
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 16, 64, "DirtLong", new Color(240, 180, 0),true)); //#FFA500
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 48, 64, "Dirt Water", new Color(188, 240, 0), true)); //#FFA500
 
-        Pallet.VoidTile = ImageHandler.GetTile(TileMap, 32, 0, "Flower", Color.BLUE); //#0000FF
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 16, 0, "Flower Red", new Color(200, 0, 0))); //#0000FF
+        Pallet.VoidTile = ImageHandler.GetTile(TileMap, 32, 0, "Flower", Color.BLUE, false); //#0000FF
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 16, 0, "Flower Red", new Color(200, 0, 0),false)); //#0000FF
 
-        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 16, 80, "Still water", new Color(0, 174, 255))); //#0000FF
+        Pallet.tiles.add(ImageHandler.GetTile(TileMap, 16, 80, "Still water", new Color(0, 174, 255), true)); //#0000FF
     }
 
     private void LoadAnimatedTiles(BufferedImage TileMap){

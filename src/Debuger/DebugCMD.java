@@ -22,6 +22,9 @@ public class DebugCMD {
             case "fuck":
                 DebugWindow.log("FUCK YOU");
                 break;
+            case "render-map-piece":
+                DebugSettings.RenderMap = !DebugSettings.RenderMap;
+                break;
             default:
                 DebugWindow.log("No CMD FOUND");
                 break;
