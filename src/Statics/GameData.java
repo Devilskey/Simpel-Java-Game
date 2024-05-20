@@ -1,14 +1,15 @@
 package Statics;
 
 import Handlers.KeyboardHandler;
-import objects.Vector2;
+import objects.SizeObjects.Scale;
+import objects.SizeObjects.Vector2;
+
+import java.awt.image.BufferedImage;
 
 public class GameData {
-    public static Vector2 WindowSize = new Vector2(0,0);
+    public static Scale WindowSize = new Scale(500, 500);
     public static int PixelSize = 64;
-    public static int TileSize = 32;
     public static int SpriteSize = 16;
     public static int fps = 0;
-    public static float DeltaTime = 0.0001f;
     public static KeyboardHandler key;
 }

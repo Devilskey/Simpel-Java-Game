@@ -9,7 +9,4 @@ public class SceneManager {
         SceneLoaded = scene;
     }
 
-    public static RenderSceneData RenderLoadedScene() {
-      return SceneLoaded.RenderdScene();
-    }
 }

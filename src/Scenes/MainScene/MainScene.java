@@ -1,62 +1,66 @@
 package Scenes.MainScene;
 
+import Entities.Villager;
+import Handlers.KeyboardHandler;
+import Handlers.Physics.ColisionHandler;
 import Interfaces.IScene;
-import Statics.GameData;
+import abstractions.Entity;
+import enums.MoveTo;
 import objects.Camera;
+import Entities.Player;
 import objects.RenderSceneData;
-import objects.Vector2;
-
-import javax.imageio.ImageIO;
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+import objects.SizeObjects.Scale;
+import objects.Tiles.Tile;
+import objects.SizeObjects.Vector2;
 
 public class MainScene implements IScene {
-
-    private final int SceneHeight = 4992;
-    private final int SceneWidth = 4992;
-    private int[][] PixelArray;
-    BufferedImage SceneImg = new BufferedImage(SceneWidth, SceneHeight, BufferedImage.TYPE_INT_RGB);
-    BufferedImage Logo;
-    BufferedImage tileMapImg;
-
-    public boolean MoveCam;
-    public boolean MoveImage;
+    private Tile[][] PixelArray;
     Camera cam ;
-    private MainWorldTiles WorldTile;
-    public float MovementSpeed = 800;
+    public Entity[] Entities = new Entity[2];
+    private final MainWorldTiles WorldTile;
 
     public MainScene(){
-        PixelArray = new int[SceneHeight / GameData.PixelSize][SceneWidth / GameData.PixelSize];
-
-        cam = new Camera(new Vector2(0,0), MovementSpeed, SceneWidth, SceneHeight);
-        try {
-            tileMapImg = ImageIO.read(new File("src/assets/test/WorstSpriteSheetEver.png"));
-        }catch (IOException e){
-            e.printStackTrace();
-        }
         WorldTile = new MainWorldTiles();
-        SceneImg.createGraphics();
-        
-        //Please DONT PUT THIS LINE IN THE UPDATE YES IT WILL FUCK EVERYTHING UP
-        // FPS will go from between 10.000 / 3000 to 700/ 400
-        WorldTile.DrawMap(SceneImg);
+        Scale MapSize = WorldTile.GetSizeMapPixels();
+        cam = new Camera(new Vector2 (0,0), 200, (int)MapSize.GetWidth() , (int)MapSize.GetHeight());
+        Entities[0] = new Player();
+        Entities[1] = new Villager(new Vector2(64, 64), "src/assets/Scripts/VillagerHenk.txt");
     }
     public void RenderScene(){
+        PixelArray = WorldTile.GetMapTiles(cam.pos.GetX(),cam.pos.GetY());
     }
 
     @Override
     public void Update() {
         RenderScene();
-        cam.MoveCamera();
+        UpdateEntities();
+    }
+
+    public void UpdateEntities(){
+        ColisionHandler.ResetNearestNPC();
+        ColisionHandler.SetMap(PixelArray);
+        ColisionHandler.SetEntities(Entities);
+        for (Entity entity : Entities) {
+            if(entity.CanMove){
+                entity.ObstacleUp = ColisionHandler.CanCollide(entity.Position, MoveTo.Up);
+                entity.ObstacleDown = ColisionHandler.CanCollide(entity.Position, MoveTo.Down);
+                entity.ObstacleLeft = ColisionHandler.CanCollide(entity.Position, MoveTo.Left);
+                entity.ObstacleRight = ColisionHandler.CanCollide(entity.Position, MoveTo.Right);
+            }
+            entity.Update();
+            if(entity instanceof Player)
+                ((Player) entity).NearNPC = ColisionHandler.GetNearestNPC();
+        }
+
+        cam.MoveWithEntitie(Entities[0].Position);
 
     }
 
     @Override
     public RenderSceneData RenderdScene() {
         RenderSceneData SceneData = new RenderSceneData();
-        SceneData.img = SceneImg;
+        SceneData.Pixels = PixelArray;
+        SceneData.Entites = Entities;
         SceneData.pos = cam.pos;
         return SceneData;
     }

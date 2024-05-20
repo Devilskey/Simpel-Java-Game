@@ -1,4 +1,4 @@
-package objects;
+package objects.SizeObjects;
 
 public class Vector2 {
     private float  x;
@@ -28,5 +28,11 @@ public class Vector2 {
     }
     public void addX(float add){
         this.x += add;
+    }
+
+    public void AddVector(Vector2 add){
+        this.x += add.GetX();
+        this.y += add.GetY();
+
     }
 }

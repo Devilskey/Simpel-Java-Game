@@ -2,11 +2,13 @@ package Graphical_And_Rendering;
 
 import Handlers.KeyboardHandler;
 import Handlers.SceneManager;
+import Statics.DebugSettings;
 import Statics.GameData;
 import objects.RenderSceneData;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
+import java.awt.image.ImageObserver;
 
 public class MainDisplay extends Canvas {
     public KeyboardHandler key = new KeyboardHandler();
@@ -14,27 +16,28 @@ public class MainDisplay extends Canvas {
     public MainDisplay(){
         addKeyListener(key);
     }
+    long TimeLastFrame = 0;
 
     public void UpdateDisplay () {
-        // System.out.println("FPS: " + GameData.fps);
         SceneManager.SceneLoaded.Update();
     }
 
-    public void Render(RenderSceneData SceneData){
-        long timeLastFrame = System.nanoTime();
+    public void Render(){
+        if(TimeLastFrame == 0)
+            TimeLastFrame = System.nanoTime();
+        RenderSceneData SceneData = SceneManager.SceneLoaded.RenderdScene();
         BufferStrategy Buffer = this.getBufferStrategy();
         if(Buffer == null){
-            createBufferStrategy(1);
+            createBufferStrategy(3);
             return;
         }
         Graphics graphics = Buffer.getDrawGraphics();
-        if(SceneData.img.getHeight() < GameData.WindowSize.GetY() && SceneData.img.getWidth() <  GameData.WindowSize.GetX())
-            graphics.drawImage(SceneData.img, (int)SceneData.pos.GetX(), (int)SceneData.pos.GetY(), (int)GameData.WindowSize.GetX(), (int)GameData.WindowSize.GetY(), null);
-        else
-            graphics.drawImage(SceneData.img, (int)SceneData.pos.GetX(), (int)SceneData.pos.GetY(), null);
-
+        SceneData.RenderImg(graphics);
+        SceneData.RenderEntities(graphics);
         Buffer.show();
-        GameData.fps = (int) (1000000000.0  / ( System.nanoTime() - timeLastFrame));
+
+        GameData.fps = (int) (1000000000.0  / ( System.nanoTime() - TimeLastFrame));
+        TimeLastFrame = System.nanoTime();
 
     }
 }
