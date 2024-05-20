@@ -37,15 +37,16 @@ public class MainWorldTiles {
         }
     }
 
-    public Tile[][] GetMapTiles(int CamX, int CamY) {
+    public Tile[][] GetMapTiles(float CamX, float CamY) {
         GameLogicHandler.SetPositionStartRender(new Vector2(CamX, CamY));
-        int posX = CamX / GameData.PixelSize;
-        int posY = CamY / GameData.PixelSize;
+        float posX = CamX / GameData.PixelSize;
+        float posY = CamY / GameData.PixelSize;
 
         int WindowWidth = ((int)GameData.WindowSize.GetWidth() / GameData.PixelSize) + 4;
         int WindowHeight = ((int)GameData.WindowSize.GetHeight() / GameData.PixelSize) + 4;
 
-        BufferedImage MapPiece = WorldMap.getSubimage(posX, posY, WindowWidth, WindowHeight);
+
+        BufferedImage MapPiece = WorldMap.getSubimage((int)posX, (int)posY, WindowWidth, WindowHeight);
         DebugSettings.Map = MapPiece;
 
         Tile[][] map = new Tile[WindowHeight][WindowWidth];
@@ -60,17 +61,6 @@ public class MainWorldTiles {
 
     public Scale GetSizeMapPixels(){
         return new Scale(WorldMap.getWidth(),WorldMap.getHeight());
-    }
-
-    public static Vector2 GetCenterFromGrid (){
-        int xTiles = GameData.WindowSize.GetWidth() / GameData.PixelSize;
-        int yTiles = GameData.WindowSize.GetHeight() / GameData.PixelSize;
-        float xMid = xTiles / 2;
-        float yMid = yTiles / 2;
-        int x = (int)(GameData.PixelSize * xMid);
-        int y = (int)(GameData.PixelSize * yMid);
-
-        return new Vector2(x,y);
     }
 
     private void LoadTiles(BufferedImage TileMap){

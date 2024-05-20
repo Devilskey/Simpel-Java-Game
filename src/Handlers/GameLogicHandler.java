@@ -6,9 +6,11 @@ import objects.SizeObjects.Vector2;
 
 public class GameLogicHandler {
     private static Vector2 PositionStartRender = new Vector2(0,0);
+
     public static void SetPositionStartRender(Vector2 NewPositionRender){
         PositionStartRender = NewPositionRender;
     }
+
     public static Vector2 WorldPositionToScreen(Vector2 PositionScreen){
         return MinPositions(PositionScreen, PositionStartRender);
     }

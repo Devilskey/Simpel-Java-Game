@@ -16,37 +16,29 @@ public class Main {
     private static MainDisplay display;
     private static final Vector2 ScreenSize = new Vector2(500, 500);
 
-    public static void main(String[] args)
-    {
-        DebugSettings.StartDebugWindow();
+    public static void main(String[] args) {
+             DebugSettings.StartDebugWindow();
 
-        SceneManager.SwitchLoadedScene(new MainScene());
+            SceneManager.SwitchLoadedScene(new MainScene());
 
-        display = new MainDisplay();
+            display = new MainDisplay();
 
-        MainWindow.add(display);
-        MainWindow.pack();
-        MainWindow.setFocusable(true);
-        MainWindow.setFocusTraversalKeysEnabled(false);
-        MainWindow.setTitle(title + " Fps = " + GameData.fps);
-        MainWindow.setSize((int)ScreenSize.GetX(), (int)ScreenSize.GetY());
-        MainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        MainWindow.setLocationRelativeTo(null);
-        MainWindow.setResizable(false);
-        MainWindow.setVisible(true);
-        KeyboardHandler.CheckIfButtonMapIspressed();
+            MainWindow.add(display);
+            MainWindow.pack();
+            MainWindow.setFocusable(true);
+            MainWindow.setFocusTraversalKeysEnabled(false);
+            MainWindow.setTitle(title + " Fps = " + GameData.fps);
+            MainWindow.setSize((int) ScreenSize.GetX(), (int) ScreenSize.GetY());
+            MainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            MainWindow.setLocationRelativeTo(null);
+            MainWindow.setResizable(true);
+            MainWindow.setVisible(true);
 
-        while(MainWindow.isVisible()) {
-
-            KeyboardHandler.CheckIfButtonMapIspressed();
-            WindowData();
-            GameLoop();
-        }
-    }
-    static void WindowData(){
-        GameData.WindowSize.SetHeight(MainWindow.getHeight());
-        GameData.WindowSize.SetWidth(MainWindow.getWidth());
-        MainWindow.setTitle(title + " Fps = " + GameData.fps);
+            while (MainWindow.isVisible()) {
+                GameLoop();
+                KeyboardHandler.CheckIfButtonMapIspressed();
+                KeyboardHandler.CheckButtonState();
+            }
     }
 
     static void GameLoop(){

@@ -3,6 +3,7 @@ package Entities;
 import Debuger.DebugWindow;
 import Graphical_And_Rendering.WindowHandler;
 import Handlers.KeyboardHandler;
+import Interfaces.Entity.NPC;
 import Scenes.MainScene.MainWorldTiles;
 import Statics.DebugSettings;
 import Statics.GameData;
@@ -19,10 +20,12 @@ import java.awt.image.BufferedImage;
 public class Player extends Entity {
     public int FramesPassed = 0;
     public int StateCounter = 0;
-    private final float MovementSpeed = 100;
     private MoveTo moveDirection = MoveTo.none;
     public int AnimationState = 0;
     public Vector2 MoveToPosition;
+    public NPC NearNPC;
+    private boolean TalkState;
+
     public Player() {
         super("src/assets/test/WorstSpriteSheetEver.png");
         //World Position not screen position
@@ -32,7 +35,9 @@ public class Player extends Entity {
         SpriteHandler.SetAnimationState(1, 2);
         MoveToPosition = new Vector2(0, 0);
         CanMove = true;
+        IsPlayer = true;
     }
+
     @Override
     public BufferedImage renderSprite(){
         SwitchSprite();
@@ -40,13 +45,13 @@ public class Player extends Entity {
     }
 
     public void SwitchSprite (){
-        int lenght = SpriteHandler.GetSpriteStateAmount(0);
+        int length = SpriteHandler.GetSpriteStateAmount(0);
 
-        if(GameData.fps * lenght > FramesPassed) {
+        if(GameData.fps * length > FramesPassed) {
             FramesPassed++;
         }else {
             FramesPassed = 0;
-            if (StateCounter < lenght - 1) {
+            if (StateCounter < length - 1) {
                 StateCounter++;
             }
             else {
@@ -91,31 +96,47 @@ public class Player extends Entity {
             return;
         }
         //D
+        float movementSpeed = 90;
         if(moveDirection == MoveTo.Right ){
-            Position.addX((MovementSpeed / GameData.fps));
+            Position.addX((movementSpeed / GameData.fps));
         }
         //A
         if(moveDirection == MoveTo.Left){
-            Position.addX(-(MovementSpeed / GameData.fps));
+            Position.addX(-(movementSpeed / GameData.fps));
         }
         //S
         if(moveDirection == MoveTo.Down){
-            Position.addY((MovementSpeed / GameData.fps));
+            Position.addY((movementSpeed / GameData.fps));
         }
         //W
         if(moveDirection == MoveTo.Up){
-            Position.addY(-(MovementSpeed / GameData.fps));
+            Position.addY(-(movementSpeed / GameData.fps));
         }
     }
     public boolean CheckIftheSamePosition(Vector2 PlayerPosition, Vector2 MoveToPosition){
         if((int)PlayerPosition.GetX() == (int)MoveToPosition.GetX())
-            if((int)PlayerPosition.GetY() == (int)MoveToPosition.GetY())
+            if((int)PlayerPosition.GetY() == (int)MoveToPosition.GetY()) {
+                Position.SetX((int)MoveToPosition.GetX());
+                Position.SetY((int)MoveToPosition.GetY());
                 return true;
+            }
         return false;
+    }
+
+    public void TalkToNPC(){
+        // Using talk state we can force the Speak Methode to be a boolean that returns true when the chat is done
+        // Using this we can have multiple text piece after each other and we need to press a button like the space bar to get
+        // Through all the diffrent text bubbles.
+        if(NearNPC != null && (KeyboardHandler.Button_Spacebar || TalkState)) {
+            TalkState = NearNPC.Speak();
+        }else if(KeyboardHandler.Button_Spacebar ){
+                System.out.println("No NPC");
+        }
     }
 
     @Override
     public void Update() {
+        TalkToNPC();
         MovePlayer();
     }
 }

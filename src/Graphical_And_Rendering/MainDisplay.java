@@ -28,19 +28,16 @@ public class MainDisplay extends Canvas {
         RenderSceneData SceneData = SceneManager.SceneLoaded.RenderdScene();
         BufferStrategy Buffer = this.getBufferStrategy();
         if(Buffer == null){
-            createBufferStrategy(2);
+            createBufferStrategy(3);
             return;
         }
         Graphics graphics = Buffer.getDrawGraphics();
         SceneData.RenderImg(graphics);
         SceneData.RenderEntities(graphics);
-
-        if(DebugSettings.RenderMap)
-            graphics.drawImage(DebugSettings.Map, 375, 350, 100, 100, null);
-
         Buffer.show();
 
         GameData.fps = (int) (1000000000.0  / ( System.nanoTime() - TimeLastFrame));
         TimeLastFrame = System.nanoTime();
+
     }
 }

@@ -14,12 +14,15 @@ public class Camera {
 
     public boolean LinkedToEntitie = false;
 
+    int trueAmount = 0;
+
     public Camera(Vector2 pos, float MovementSpeed, int MaxX, int MaxY) {
         this.pos = pos;
         this.MovementSpeed = MovementSpeed;
         this.MaxX = MaxX * GameData.PixelSize;
         this.MaxY = MaxY * GameData.PixelSize;
     }
+
     public Camera (Vector2 pos, float MovementSpeed, int MaxX, int MaxY, boolean Linked){
         this.LinkedToEntitie = Linked;
         this.pos = pos;
@@ -39,19 +42,21 @@ public class Camera {
             pos.SetX((MaxX - GameData.WindowSize.GetWidth()));
     }
     public void MoveWithEntitie (Vector2 positionPlayer) {
-        float centerXplayer =  (WindowHandler.GetCenterX() - (float) GameData.PixelSize);
-        float centerYplayer =  (WindowHandler.GetCenterY() - (float) GameData.PixelSize);
+        float centerXplayer = (WindowHandler.GetCenterX() - (float) GameData.PixelSize);
+        float centerYplayer = (WindowHandler.GetCenterY() - (float) GameData.PixelSize);
 
-        float x = pos.GetX();
-        float y =  pos.GetY();
+        float x = 0;
+        float y = 0;
 
-        if (positionPlayer.GetX() > centerXplayer) {
+        if (positionPlayer.GetX() > centerXplayer)
             x = positionPlayer.GetX() - centerXplayer;
-        }
-        if (positionPlayer.GetY() > centerYplayer) {
-            y = positionPlayer.GetY() - centerYplayer;
-        }
+        else
+            x = 0;
 
+        if (positionPlayer.GetY() > centerYplayer)
+            y = positionPlayer.GetY() - centerYplayer;
+        else
+            y = 0;
         pos = new Vector2(x, y);
     }
 

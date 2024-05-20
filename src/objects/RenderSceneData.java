@@ -14,6 +14,8 @@ public class RenderSceneData {
     public Tile[][] Pixels;
     public Vector2 pos;
     public Entity[] Entites;
+
+
     public void RenderEntities (Graphics graphics){
         for(Entity entity : Entites){
             Vector2 PositionScreen = GameLogicHandler.WorldPositionToScreen(entity.Position);
@@ -26,14 +28,16 @@ public class RenderSceneData {
     public void RenderImg (Graphics graphics){
         int TilesPassedX = (int)(pos.GetX() / GameData.PixelSize);
         int TilesPassedY = (int)(pos.GetY() / GameData.PixelSize);
-        float CamX = pos.GetX() - TilesPassedX * GameData.PixelSize;
-        float CamY = pos.GetY() -  TilesPassedY * GameData.PixelSize;
+
+        int CamX = (int) (pos.GetX() - TilesPassedX * GameData.PixelSize);
+        int CamY = (int) (pos.GetY() -  TilesPassedY * GameData.PixelSize);
 
         int x = 0;
         int y = 0;
+
         for (Tile[] pixel : Pixels){
             for (Tile tile : pixel){
-                graphics.drawImage(tile.image, ((x * GameData.PixelSize)  - (int) CamX), ((y * GameData.PixelSize) - (int) CamY), GameData.PixelSize , GameData.PixelSize, null);
+                graphics.drawImage(tile.image, ((x * GameData.PixelSize)  - CamX), ((y * GameData.PixelSize) - CamY), GameData.PixelSize , GameData.PixelSize, null);
                 x++;
             }
             x = 0;

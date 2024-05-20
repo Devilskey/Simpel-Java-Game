@@ -21,6 +21,9 @@ public abstract class Entity {
     public abstract void Update();
     public boolean CanMove = false;
     public boolean ObstacleUp, ObstacleDown, ObstacleLeft, ObstacleRight;
+    public boolean canColide = true;
+    public boolean IsPlayer = false;
+
     public Entity(String SpriteSheatPath){
         try {
             SpriteSheet = ImageIO.read(new File(SpriteSheatPath));
