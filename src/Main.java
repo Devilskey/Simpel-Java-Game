@@ -5,8 +5,9 @@ import Scenes.MainScene.MainScene;
 import Statics.DebugSettings;
 import Statics.GameData;
 import objects.SizeObjects.Vector2;
+import objects.UserInterfaces.UITexts;
+import objects.UserInterfaces.UIImages;
 
-import java.awt.*;
 import javax.swing.*;
 
 public class Main {
@@ -21,6 +22,20 @@ public class Main {
                 SceneManager.SwitchLoadedScene(new MainScene());
 
                 display = new MainDisplay();
+
+                UITexts uiTxtObjHealth = new UITexts(
+                                "TextObject_Health", 240, 50, 0, 0, 6,
+                                "HP | 69", "none", "none", "none", 2,
+                                "#ff0000", 32, "Arial", true, false);
+
+                display.addUITextObject(uiTxtObjHealth);
+
+                UIImages uiImgObjRuby = new UIImages(
+                                "ImageObject_Ruby", 64, 64, 0, 40, 4,
+                                "src/assets/UserInterface/ruby.png",
+                                "none", "none", 1,
+                                false);
+                display.addUIImageObject(uiImgObjRuby);
 
                 MainWindow.add(display);
                 MainWindow.pack();
