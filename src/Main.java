@@ -1,4 +1,3 @@
-import Debuger.DebugWindow;
 import Graphical_And_Rendering.MainDisplay;
 import Handlers.KeyboardHandler;
 import Handlers.SceneManager;
@@ -7,6 +6,7 @@ import Statics.DebugSettings;
 import Statics.GameData;
 import objects.SizeObjects.Vector2;
 
+import java.awt.*;
 import javax.swing.*;
 
 public class Main {

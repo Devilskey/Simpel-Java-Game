@@ -2,12 +2,13 @@ package Graphical_And_Rendering;
 
 import Handlers.KeyboardHandler;
 import Handlers.SceneManager;
-import Statics.DebugSettings;
 import Statics.GameData;
 import objects.RenderSceneData;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
+import java.util.ArrayList;
+import java.util.List;
 import java.awt.image.ImageObserver;
 
 public class MainDisplay extends Canvas {
@@ -35,10 +36,10 @@ public class MainDisplay extends Canvas {
         Graphics graphics = Buffer.getDrawGraphics();
         SceneData.RenderImg(graphics);
         SceneData.RenderEntities(graphics);
+
         Buffer.show();
 
         GameData.fps = (int) (1000000000.0 / (System.nanoTime() - TimeLastFrame));
         TimeLastFrame = System.nanoTime();
-
     }
 }
