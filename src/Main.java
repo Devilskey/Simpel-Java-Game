@@ -1,4 +1,3 @@
-import Debuger.DebugWindow;
 import Graphical_And_Rendering.MainDisplay;
 import Handlers.KeyboardHandler;
 import Handlers.SceneManager;
@@ -6,9 +5,9 @@ import Scenes.MainScene.MainScene;
 import Statics.DebugSettings;
 import Statics.GameData;
 import objects.SizeObjects.Vector2;
-import objects.UserInterfaces.UserInterfaceObjects;
+import objects.UserInterfaces.UITexts;
+import objects.UserInterfaces.UIImages;
 
-import java.awt.*;
 import javax.swing.*;
 
 
@@ -25,19 +24,21 @@ public class Main {
 
         display = new MainDisplay();
 
-        UserInterfaceObjects uiObjHealth = new UserInterfaceObjects(
-                "TextObjectTwo", 240, 50, 0, 0, 6,
-                "HP | 69", "none", "none", "none", 2,
-                "#ff0000", 32, "Arial", true, false
-        );
-        UserInterfaceObjects uiObjdeath = new UserInterfaceObjects(
-                "TextObjectTwo", 240, 50, 300, 0, 6,
+        UITexts uiTxtObjHealth = new UITexts(
+                "TextObject_Health", 240, 50, 0, 0, 6,
                 "HP | 69", "none", "none", "none", 2,
                 "#ff0000", 32, "Arial", true, false
         );
 
-        display.addUITextObject(uiObjHealth);
-        display.addUITextObject(uiObjdeath);
+        display.addUITextObject(uiTxtObjHealth);
+
+        UIImages uiImgObjRuby = new UIImages(
+                "ImageObject_Ruby", 64, 64, 0, 40, 4,
+                "src/assets/UserInterface/ruby.png",
+                "none", "none", 1,
+                 false
+        );
+        display.addUIImageObject(uiImgObjRuby);
 
         MainWindow.add(display);
         MainWindow.pack();

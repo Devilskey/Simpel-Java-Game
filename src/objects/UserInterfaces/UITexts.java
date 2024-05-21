@@ -5,7 +5,7 @@ import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 
-public class UserInterfaceObjects {
+public class UITexts {
     private String name;
     private int width, height;
     private int positionX, positionY, positionZ;
@@ -20,9 +20,9 @@ public class UserInterfaceObjects {
     private boolean textWrap;
     private boolean isButton;
 
-    public UserInterfaceObjects(String name, int width, int height, int positionX, int positionY, int positionZ,
-                                String content, String backgroundColor, String borderStyle, String borderColor, int borderThickness,
-                                String fontColor, int fontSize, String fontType, boolean textWrap, boolean isButton) {
+    public UITexts(String name, int width, int height, int positionX, int positionY, int positionZ,
+                   String content, String backgroundColor, String borderStyle, String borderColor, int borderThickness,
+                   String fontColor, int fontSize, String fontType, boolean textWrap, boolean isButton) {
         this.name = name;
         this.width = width;
         this.height = height;
