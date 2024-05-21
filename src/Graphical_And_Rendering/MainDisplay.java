@@ -5,17 +5,26 @@ import Handlers.SceneManager;
 import Statics.DebugSettings;
 import Statics.GameData;
 import objects.RenderSceneData;
+import objects.UserInterfaces.UserInterfaceObjects;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
+import java.util.ArrayList;
+import java.util.List;
 import java.awt.image.ImageObserver;
 
 public class MainDisplay extends Canvas {
     public KeyboardHandler key = new KeyboardHandler();
+    private List<UserInterfaceObjects> uiTextObjects = new ArrayList<>();
 
     public MainDisplay(){
         addKeyListener(key);
     }
+
+    public void addUITextObject(UserInterfaceObjects uiTextObject) {
+        uiTextObjects.add(uiTextObject);
+    }
+
     long TimeLastFrame = 0;
 
     public void UpdateDisplay () {
@@ -36,8 +45,15 @@ public class MainDisplay extends Canvas {
         SceneData.RenderEntities(graphics);
         Buffer.show();
 
+        renderUITextObjects(graphics);
+
         GameData.fps = (int) (1000000000.0  / ( System.nanoTime() - TimeLastFrame));
         TimeLastFrame = System.nanoTime();
+    }
 
+    private void renderUITextObjects(Graphics g) {
+        for (UserInterfaceObjects uiTextObject : uiTextObjects) {
+            uiTextObject.render(g);
+        }
     }
 }
