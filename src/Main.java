@@ -24,12 +24,20 @@ public class Main {
         SceneManager.SwitchLoadedScene(new MainScene());
 
         display = new MainDisplay();
-        UserInterfaceObjects textObject_One = new UserInterfaceObjects(
-                "TextObjectOne", 200, 50, 50, 50, 5,
-                "Hello, World!", Color.BLACK, "solid", Color.RED, 2,
-                Color.WHITE, 20, "Arial", true, false
+
+        UserInterfaceObjects uiObjHealth = new UserInterfaceObjects(
+                "TextObjectTwo", 240, 50, 0, 0, 6,
+                "HP | 69", "none", "none", "none", 2,
+                "#ff0000", 32, "Arial", true, false
         );
-        display.addUITextObject(textObject_One);
+        UserInterfaceObjects uiObjdeath = new UserInterfaceObjects(
+                "TextObjectTwo", 240, 50, 300, 0, 6,
+                "HP | 69", "none", "none", "none", 2,
+                "#ff0000", 32, "Arial", true, false
+        );
+
+        display.addUITextObject(uiObjHealth);
+        display.addUITextObject(uiObjdeath);
 
         MainWindow.add(display);
         MainWindow.pack();
