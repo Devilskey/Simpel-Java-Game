@@ -64,7 +64,6 @@ public class MainDisplay extends Canvas {
 
         for (UserInterfaceObjects uiTextObject : uiTextObjects) {
             uiTextObject.render(graphics);
-            System.out.println(uiTextObject.getFontColor());
         }
     }
 }
