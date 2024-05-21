@@ -2,10 +2,14 @@ package Graphical_And_Rendering;
 
 import Handlers.KeyboardHandler;
 import Handlers.SceneManager;
-import Statics.DebugSettings;
 import Statics.GameData;
 import objects.RenderSceneData;
+<<<<<<< HEAD
 import objects.UserInterfaces.UserInterfaceObjects;
+=======
+import objects.UserInterfaces.UITexts;
+import objects.UserInterfaces.UIImages;
+>>>>>>> 12d40f53f73e333f0cf4b9e56a318f643e5a1858
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
@@ -17,7 +21,7 @@ public class MainDisplay extends Canvas {
     public KeyboardHandler key = new KeyboardHandler();
     private List<UserInterfaceObjects> uiTextObjects = new ArrayList<>();
 
-    public MainDisplay(){
+    public MainDisplay() {
         addKeyListener(key);
     }
 
@@ -27,22 +31,26 @@ public class MainDisplay extends Canvas {
 
     long TimeLastFrame = 0;
 
-    public void UpdateDisplay () {
+    public void UpdateDisplay() {
         SceneManager.SceneLoaded.Update();
     }
 
-    public void Render(){
-        if(TimeLastFrame == 0)
+    public void Render() {
+        if (TimeLastFrame == 0)
             TimeLastFrame = System.nanoTime();
         RenderSceneData SceneData = SceneManager.SceneLoaded.RenderdScene();
         BufferStrategy Buffer = this.getBufferStrategy();
-        if(Buffer == null){
+        if (Buffer == null) {
             createBufferStrategy(3);
             return;
         }
         Graphics graphics = Buffer.getDrawGraphics();
         SceneData.RenderImg(graphics);
         SceneData.RenderEntities(graphics);
+
+        renderUITextObjects(graphics);
+        renderUIImageObjects(graphics);
+
         Buffer.show();
 
         renderUITextObjects(graphics);
