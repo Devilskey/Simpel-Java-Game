@@ -1,6 +1,6 @@
 package objects.Sprites;
 
-import Debuger.DebugWindow;
+import Debugger.DebugWindow;
 import Statics.GameData;
 
 import java.awt.image.BufferedImage;

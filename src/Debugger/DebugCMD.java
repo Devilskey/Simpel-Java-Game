@@ -1,4 +1,4 @@
-package Debuger;
+package Debugger;
 
 import Statics.DebugSettings;
 import Statics.GameData;
@@ -24,6 +24,9 @@ public class DebugCMD {
                 break;
             case "render-map-piece":
                 DebugSettings.RenderMap = !DebugSettings.RenderMap;
+                break;
+            case "test-write-log":
+                Logger.LogDebug("Testing debug log");
                 break;
             default:
                 DebugWindow.log("No CMD FOUND");

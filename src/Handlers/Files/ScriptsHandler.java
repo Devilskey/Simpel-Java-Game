@@ -1,4 +1,4 @@
-package Statics.File;
+package Handlers.Files;
 
 import java.io.IOException;
 import java.nio.file.Files;

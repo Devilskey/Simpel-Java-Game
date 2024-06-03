@@ -1,7 +1,5 @@
 package Handlers;
 
-import Debuger.DebugWindow;
-import Statics.GameData;
 import objects.SizeObjects.Vector2;
 
 public class GameLogicHandler {

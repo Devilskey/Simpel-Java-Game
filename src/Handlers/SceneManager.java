@@ -1,11 +1,10 @@
 package Handlers;
 
-import Interfaces.IScene;
-import objects.RenderSceneData;
+import abstractions.Scene;
 
 public class SceneManager {
-    public static IScene SceneLoaded;
-    public static void SwitchLoadedScene(IScene scene){
+    public static Scene SceneLoaded;
+    public static void SwitchLoadedScene(Scene scene){
         SceneLoaded = scene;
     }
 

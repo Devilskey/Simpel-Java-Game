@@ -1,8 +1,7 @@
 package objects;
 
-import Debuger.DebugWindow;
 import Graphical_And_Rendering.WindowHandler;
-import Handlers.KeyboardHandler;
+import Handlers.Peripherals.KeyboardHandler;
 import Statics.GameData;
 import objects.SizeObjects.Vector2;
 
@@ -58,17 +57,5 @@ public class Camera {
         else
             y = 0;
         pos = new Vector2(x, y);
-    }
-
-    public void MoveCameraUsingKeys () {
-        if (KeyboardHandler.Key_A)
-            pos.addX(-(MovementSpeed / GameData.fps));
-        else if (KeyboardHandler.Key_D)
-            pos.addX((MovementSpeed / GameData.fps));
-       else if (KeyboardHandler.Key_S)
-            pos.addY(MovementSpeed / GameData.fps);
-       else if (KeyboardHandler.Key_W)
-            pos.addY(-(MovementSpeed / GameData.fps));
-         BordersCam();
     }
 }

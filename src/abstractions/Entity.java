@@ -1,6 +1,6 @@
 package abstractions;
 
-import Debuger.DebugWindow;
+import Debugger.DebugWindow;
 import objects.SizeObjects.Scale;
 import objects.SizeObjects.Vector2;
 import objects.Sprites.Sprites;

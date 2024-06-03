@@ -1,8 +1,7 @@
-package Entities;
+package Entities.NPC;
 
-import Handlers.KeyboardHandler;
 import Interfaces.Entity.NPC;
-import Statics.File.ScriptsHandler;
+import Handlers.Files.ScriptsHandler;
 import Statics.GameData;
 import abstractions.Entity;
 import objects.SizeObjects.Scale;
@@ -17,7 +16,7 @@ public class Villager extends Entity implements NPC {
     private int OutputNumber = 0;
 
     public Villager(Vector2 pos, String TextFilePath) {
-        super("src/assets/test/WorstSpriteSheetEver.png");
+        super("src/Assets/test/WorstSpriteSheetEver.png");
         Position = pos;
         Size = new Scale(GameData.PixelSize, GameData.PixelSize);
         SpriteHandler.SetAnimationState(0, 1);
@@ -33,8 +32,8 @@ public class Villager extends Entity implements NPC {
     @Override
     public void Start() {
         try {
-            String[] NewLines = ScriptsHandler.GetNPCScript("src/assets/Scripts/VillagerHenk.txt");
-            System.out.println(NewLines[1]);
+            String[] NewLines = ScriptsHandler.GetNPCScript("src/Assets/Scripts/VillagerHenk.txt");
+            System.out.println(NewLines[0]);
             Lines = NewLines;
 
         }catch (IOException ex)
@@ -49,8 +48,8 @@ public class Villager extends Entity implements NPC {
 
     @Override
     public boolean Speak() {
-        OutputNumber ++;
         System.out.println(Lines[OutputNumber % 4] + " i count: " + OutputNumber + " State Spacebar: ");
+        OutputNumber ++;
         return false;
     }
 }

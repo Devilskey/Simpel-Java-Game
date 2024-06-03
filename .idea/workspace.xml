@@ -5,31 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69840300-d08e-4cde-8b79-73072f3ee401" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Simpel-Java-Game.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/Villager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Statics/Directions/DirectionsVector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Statics/File/ScriptsHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Scripts/VillagerHenk.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/EntityType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/KeyState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/Scripts/VillagerHenk.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Debugger/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Handlers/Peripherals/MouseInputHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Handlers/Peripherals/MouseMotionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/SceneMapLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scenes/TestScene/BlankScene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Statics/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abstractions/Scene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/enums/LogLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Debuger/DebugCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Debugger/DebugCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Debuger/DebugWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Debugger/DebugWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Villager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/NPC/Villager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graphical_And_Rendering/MainDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphical_And_Rendering/MainDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Handlers/GameLogicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/GameLogicHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/KeyboardHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/KeyboardHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handlers/KeyboardHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/Peripherals/KeyboardHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Handlers/Physics/ColisionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/Physics/ColisionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handlers/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/SceneManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IScene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LagacyScripts/TestClasses/TestRenderFunctions.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scenes/MainScene/MainScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scenes/MainScene/MainScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scenes/MainScene/MainWorldTiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scenes/MainScene/MainWorldTiles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Statics/DebugSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statics/DebugSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Statics/Directions/DirectionsVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/Physics/DirectionsVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Statics/File/ScriptsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/Files/ScriptsHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Statics/GameData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statics/GameData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/abstractions/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abstractions/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Scripts/VillagerHenk.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/test/NewDemoSpriteSheat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/test/NewDemoSpriteSheat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/test/WorstSpriteSheetEver.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/test/WorstSpriteSheetEver.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/test/WorstSpriteSheetEver2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/test/WorstSpriteSheetEver2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/Camera.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/RenderSceneData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/RenderSceneData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/SizeObjects/Vector2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/SizeObjects/Vector2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/Sprites/Sprites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/Sprites/Sprites.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +73,7 @@
     &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;RedoRendering(Devil-Branch-2)&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;BasicEntityWorkings&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -73,6 +85,10 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/Scripts" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Game" />
+      <recent name="Engine" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
