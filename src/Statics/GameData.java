@@ -1,10 +1,7 @@
 package Statics;
 
-import Handlers.KeyboardHandler;
+import Handlers.Peripherals.KeyboardHandler;
 import objects.SizeObjects.Scale;
-import objects.SizeObjects.Vector2;
-
-import java.awt.image.BufferedImage;
 
 public class GameData {
     public static Scale WindowSize = new Scale(500, 500);

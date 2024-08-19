@@ -1,30 +1,37 @@
 package Scenes.MainScene;
 
-import Entities.Villager;
-import Handlers.KeyboardHandler;
+import Entities.NPC.Villager;
 import Handlers.Physics.ColisionHandler;
-import Interfaces.IScene;
+import abstractions.Scene;
 import abstractions.Entity;
 import enums.MoveTo;
 import objects.Camera;
 import Entities.Player;
-import objects.RenderSceneData;
 import objects.SizeObjects.Scale;
 import objects.Tiles.Tile;
 import objects.SizeObjects.Vector2;
 
-public class MainScene implements IScene {
-    private Tile[][] PixelArray;
-    Camera cam ;
-    public Entity[] Entities = new Entity[2];
+import javax.swing.text.Position;
+
+public class MainScene extends Scene {
+
     private final MainWorldTiles WorldTile;
 
+    private Camera cam ;
+
     public MainScene(){
+        super();
         WorldTile = new MainWorldTiles();
+
         Scale MapSize = WorldTile.GetSizeMapPixels();
-        cam = new Camera(new Vector2 (0,0), 200, (int)MapSize.GetWidth() , (int)MapSize.GetHeight());
-        Entities[0] = new Player();
-        Entities[1] = new Villager(new Vector2(64, 64), "src/assets/Scripts/VillagerHenk.txt");
+        cam = new Camera(new Vector2 (0,0),
+                200,
+                (int)MapSize.GetWidth() ,
+                (int)MapSize.GetHeight());
+
+        Entities.add(new Player());
+        Entities.add(new Villager(new Vector2(64, 64),
+                "src/assets/Scripts/VillagerHenk.txt"));
     }
 
     @Override
@@ -51,14 +58,5 @@ public class MainScene implements IScene {
 
         cam.MoveWithEntitie(Entities[0].Position);
 
-    }
-
-    @Override
-    public RenderSceneData RenderdScene() {
-        RenderSceneData SceneData = new RenderSceneData();
-        SceneData.Pixels = PixelArray;
-        SceneData.Entites = Entities;
-        SceneData.pos = cam.pos;
-        return SceneData;
     }
 }

@@ -1,23 +1,22 @@
-package Statics.Directions;
+package Handlers.Physics;
 
+import Statics.GameData;
 import enums.MoveTo;
 import objects.SizeObjects.Vector2;
-
-import java.sql.Statement;
 
 public class DirectionsVector {
 
     public static Vector2 RightOnGrid(){
-        return  new Vector2(64, 0);
+        return  new Vector2(GameData.PixelSize, 0);
     }
     public static Vector2 LeftOnGrid(){
-        return  new Vector2(-64, 0);
+        return  new Vector2(-GameData.PixelSize, 0);
     }
     public static Vector2 UpOnGrid(){
-        return  new Vector2(0, -64);
+        return  new Vector2(0, -GameData.PixelSize);
     }
     public static Vector2 BottomOnGrid(){
-        return  new Vector2(0, 64);
+        return  new Vector2(0, GameData.PixelSize);
     }
 
     public static Vector2 MoveToVector2(MoveTo Direction){

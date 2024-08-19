@@ -1,0 +1,17 @@
+[Debug] [13:48:15] Log: { Created Log File: Logging/Log-06-03-2024.txt }
+[Debug] [13:48:16] Log: { Window Opened }
+[Debug] [13:48:16] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:48:16] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Info] [13:48:16] Log: { Logging started }
+[Debug] [13:48:32] Log: { Window Opened }
+[Debug] [13:48:32] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:48:32] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Info] [13:48:32] Log: { Logging started }

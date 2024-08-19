@@ -1,6 +1,6 @@
 package Statics;
 
-import Debuger.DebugWindow;
+import Debugger.DebugWindow;
 
 import javax.swing.*;
 import java.awt.image.BufferedImage;

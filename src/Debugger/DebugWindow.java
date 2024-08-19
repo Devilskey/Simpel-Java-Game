@@ -1,4 +1,4 @@
-package Debuger;
+package Debugger;
 
 import javax.swing.*;
 import java.awt.*;
@@ -62,6 +62,7 @@ public class DebugWindow extends JFrame {
     }
 
     public static void log(int number) {
+        Logger.LogDebug(String.valueOf(number));
         String timeStamp = new SimpleDateFormat("HH:mm:ss").format(new Date());
 
         String logMessage = "[" + timeStamp + "] " + number + "\n";
@@ -69,9 +70,12 @@ public class DebugWindow extends JFrame {
         logTextArea.append(logMessage);
 
         logTextArea.setCaretPosition(logTextArea.getDocument().getLength());
+
     }
 
     public static void log(String message) {
+        Logger.LogDebug(message);
+
         String timeStamp = new SimpleDateFormat("HH:mm:ss").format(new Date());
 
         String logMessage = "[" + timeStamp + "] " + message + "\n";

@@ -1,6 +1,8 @@
 package Graphical_And_Rendering;
 
-import Handlers.KeyboardHandler;
+import Handlers.Peripherals.KeyboardHandler;
+import Handlers.Peripherals.MouseInputHandler;
+import Handlers.Peripherals.MouseMotionHandler;
 import Handlers.SceneManager;
 import Statics.GameData;
 import objects.RenderSceneData;
@@ -13,9 +15,14 @@ import java.awt.image.ImageObserver;
 
 public class MainDisplay extends Canvas {
     public KeyboardHandler key = new KeyboardHandler();
+    public MouseInputHandler mouseInput = new MouseInputHandler();
+    public MouseMotionHandler mouseMotion = new MouseMotionHandler();
 
     public MainDisplay() {
         addKeyListener(key);
+        addMouseListener(mouseInput);
+        addMouseMotionListener(mouseMotion);
+
     }
 
     long TimeLastFrame = 0;
@@ -35,6 +42,7 @@ public class MainDisplay extends Canvas {
             createBufferStrategy(3);
             return;
         }
+
         Graphics graphics = Buffer.getDrawGraphics();
         SceneData.RenderImg(graphics);
         SceneData.RenderEntities(graphics);

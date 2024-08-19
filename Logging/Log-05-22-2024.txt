@@ -1,0 +1,62 @@
+[Debug] [11:00:55] Log: { Created Log File: Logging/Log-05-22-2024.txt }
+[Debug] [11:00:56] Log: { Window Opened }
+[Info] [11:00:56] Log: { Logging started }
+[Debug] [11:02:02] Log: { Window Opened }
+[Info] [11:02:02] Log: { Logging started }
+[Debug] [11:02:06] Log: { No CMD FOUND }
+[Debug] [11:02:07] Log: { No CMD FOUND }
+[Debug] [11:02:09] Log: { No CMD FOUND }
+[Debug] [14:07:39] Log: { Window Opened }
+[Info] [14:07:39] Log: { Logging started }
+[Debug] [14:07:53] Log: { Window Opened }
+[Debug] [14:07:53] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:08:25] Log: { Window Opened }
+[Debug] [14:08:25] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:08:25] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Info] [14:08:25] Log: { Logging started }
+[Debug] [14:10:04] Log: { Window Opened }
+[Debug] [14:10:04] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:10:04] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Info] [14:10:04] Log: { Logging started }
+[Debug] [14:10:58] Log: { Window Opened }
+[Debug] [14:10:58] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:10:58] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Info] [14:10:58] Log: { Logging started }
+[Debug] [14:13:01] Log: { Window Opened }
+[Debug] [14:13:01] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:13:01] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Info] [14:13:01] Log: { Logging started }
+[Debug] [14:14:49] Log: { Window Opened }
+[Debug] [14:14:49] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:14:49] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Info] [14:14:49] Log: { Logging started }
+[Debug] [14:15:28] Log: { Window Opened }
+[Debug] [14:15:28] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:15:28] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Info] [14:15:28] Log: { Logging started }

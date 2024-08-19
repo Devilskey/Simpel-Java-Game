@@ -5,13 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69840300-d08e-4cde-8b79-73072f3ee401" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simpel-Java-Game.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/Villager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Statics/Directions/DirectionsVector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Statics/File/ScriptsHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Scripts/VillagerHenk.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/enums/EntityType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/enums/KeyState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graphical_And_Rendering/MainDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphical_And_Rendering/MainDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/SceneManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/IScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handlers/GameLogicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/GameLogicHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handlers/KeyboardHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/KeyboardHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handlers/Physics/ColisionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/Physics/ColisionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scenes/MainScene/MainScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scenes/MainScene/MainScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scenes/MainScene/MainWorldTiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scenes/MainScene/MainWorldTiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Statics/DebugSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statics/DebugSettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Statics/GameData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statics/GameData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abstractions/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abstractions/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/RenderSceneData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/RenderSceneData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/SizeObjects/Vector2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/SizeObjects/Vector2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +65,8 @@
     &quot;Application.UserInterface.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/DevAccount/Desktop/Projects/GitKraken/Simpel-Java-Game&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+    &quot;git-widget-placeholder&quot;: &quot;RedoRendering(Devil-Branch-2)&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
@@ -61,6 +77,10 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/Scripts" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Game" />
+      <recent name="Engine" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">

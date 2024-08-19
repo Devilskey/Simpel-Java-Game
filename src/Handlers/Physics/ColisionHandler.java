@@ -1,16 +1,14 @@
 package Handlers.Physics;
 
-import Debuger.DebugWindow;
-import Entities.Villager;
 import Handlers.GameLogicHandler;
 import Interfaces.Entity.NPC;
-import Statics.Directions.DirectionsVector;
 import Statics.GameData;
 import abstractions.Entity;
 import enums.MoveTo;
 import objects.SizeObjects.Vector2;
 import objects.Tiles.Tile;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ColisionHandler {
@@ -22,8 +20,8 @@ public class ColisionHandler {
         map = newMap;
     }
 
-    public static void SetEntities(Entity[] entitieArray){
-        entities = entitieArray;
+    public static void SetEntities(ArrayList<Entity> entitiesArray){
+        entities = entitiesArray.toArray(new Entity[entitiesArray.size()]);
     }
 
     public static NPC GetNearestNPC(){

@@ -1,20 +1,15 @@
 package Entities;
 
-import Debuger.DebugWindow;
-import Graphical_And_Rendering.WindowHandler;
-import Handlers.KeyboardHandler;
+import Handlers.Peripherals.KeyboardHandler;
+import Handlers.Physics.ColisionHandler;
 import Interfaces.Entity.NPC;
-import Scenes.MainScene.MainWorldTiles;
-import Statics.DebugSettings;
 import Statics.GameData;
+import Statics.Input;
 import abstractions.Entity;
 import enums.MoveTo;
 import objects.SizeObjects.Scale;
 import objects.SizeObjects.Vector2;
-import objects.Tiles.AnimatedTiles;
-import objects.Tiles.Tile;
 
-import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class Player extends Entity {
@@ -27,7 +22,7 @@ public class Player extends Entity {
     private boolean TalkState;
 
     public Player() {
-        super("src/assets/test/WorstSpriteSheetEver.png");
+        super("src/Assets/test/WorstSpriteSheetEver.png");
         //World Position not screen position
         Position = new Vector2(0, 0);
         Size = new Scale(GameData.PixelSize, GameData.PixelSize);
@@ -66,22 +61,22 @@ public class Player extends Entity {
 
     public void MovePlayer(){
         if(moveDirection == MoveTo.none) {
-            if (KeyboardHandler.Key_A && !ObstacleLeft) {
+            if (Input.Key_A && !ObstacleLeft) {
                 MoveToPosition.addX(-GameData.PixelSize);
                 moveDirection = MoveTo.Left;
                 return;
             }
-            if (KeyboardHandler.Key_D  && !ObstacleRight) {
+            if (Input.Key_D  && !ObstacleRight) {
                 MoveToPosition.addX(GameData.PixelSize);
                 moveDirection = MoveTo.Right;
                 return;
             }
-            if (KeyboardHandler.Key_S  && !ObstacleDown) {
+            if (Input.Key_S  && !ObstacleDown) {
                 MoveToPosition.addY(GameData.PixelSize);
                 moveDirection = MoveTo.Down;
                 return;
             }
-            if (KeyboardHandler.Key_W && !ObstacleUp) {
+            if (Input.Key_W && !ObstacleUp) {
                 MoveToPosition.addY(-GameData.PixelSize);
                 moveDirection = MoveTo.Up;
 
@@ -127,9 +122,11 @@ public class Player extends Entity {
         // Using talk state we can force the Speak Methode to be a boolean that returns true when the chat is done
         // Using this we can have multiple text piece after each other and we need to press a button like the space bar to get
         // Through all the diffrent text bubbles.
-        if(NearNPC != null && (KeyboardHandler.Button_Spacebar || TalkState)) {
+         NearNPC = ColisionHandler.GetNearestNPC();
+
+        if(NearNPC != null && (Input.Button_Spacebar || TalkState)) {
             TalkState = NearNPC.Speak();
-        }else if(KeyboardHandler.Button_Spacebar ){
+        }else if(Input.Button_Spacebar ){
                 System.out.println("No NPC");
         }
     }

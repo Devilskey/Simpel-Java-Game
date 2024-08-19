@@ -1,69 +1,19 @@
 package Scenes.MainScene;
 
-import Debuger.DebugWindow;
 import Graphical_And_Rendering.ImageHandler;
-import Handlers.GameLogicHandler;
-import Statics.DebugSettings;
-import Statics.GameData;
-import objects.SizeObjects.Scale;
-import objects.SizeObjects.Vector2;
+import Interfaces.SceneMapLoader;
 import objects.Tiles.AnimatedTiles;
-import objects.Tiles.Tile;
-import objects.Tiles.TilePallet;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
-public class MainWorldTiles {
-    public TilePallet Pallet = new TilePallet();
-    private String TileMapLocation = "src/assets/test/NewDemoSpriteSheat.png";
-    private String MapLocation = "src/Scenes/MainScene/World/Map.png";
-    BufferedImage WorldMap;
+public class MainWorldTiles extends SceneMapLoader {
 
     public MainWorldTiles(){
-        try {
-            BufferedImage TileMap = ImageIO.read(new File(TileMapLocation));
-
-            WorldMap = ImageIO.read(new File(MapLocation));
-
-            LoadTiles(TileMap);
-            LoadAnimatedTiles(TileMap);
-
-        }catch (IOException ex) {
-            ex.printStackTrace();
-        }
+        super("src/Scenes/MainScene/World/Map.png", "src/Assets/test/NewDemoSpriteSheat.png");
     }
 
-    public Tile[][] GetMapTiles(float CamX, float CamY) {
-        GameLogicHandler.SetPositionStartRender(new Vector2(CamX, CamY));
-        float posX = CamX / GameData.PixelSize;
-        float posY = CamY / GameData.PixelSize;
-
-        int WindowWidth = ((int)GameData.WindowSize.GetWidth() / GameData.PixelSize) + 4;
-        int WindowHeight = ((int)GameData.WindowSize.GetHeight() / GameData.PixelSize) + 4;
-
-
-        BufferedImage MapPiece = WorldMap.getSubimage((int)posX, (int)posY, WindowWidth, WindowHeight);
-        DebugSettings.Map = MapPiece;
-
-        Tile[][] map = new Tile[WindowHeight][WindowWidth];
-        for (int x = 0; x < MapPiece.getWidth(); x++) {
-            for (int y = 0; y < MapPiece.getHeight(); y++) {
-                map[y][x] = Pallet.PixelEqualsSprite(x, y, MapPiece);
-            }
-        }
-        Pallet.SwitchStates();
-        return map;
-    }
-
-    public Scale GetSizeMapPixels(){
-        return new Scale(WorldMap.getWidth(),WorldMap.getHeight());
-    }
-
-    private void LoadTiles(BufferedImage TileMap){
+    public void LoadTiles(BufferedImage TileMap){
         Pallet.tiles.add(ImageHandler.GetTile(TileMap, 0, 0, "Grass",  new Color(0, 255, 0), false)); //#008000
         Pallet.tiles.add(ImageHandler.GetTile(TileMap, 0, 16, "Grass Water",  new Color(0, 220, 0),true)); //#008000
         Pallet.tiles.add(ImageHandler.GetTile(TileMap, 16, 16, "Grass Water Corner Top",  new Color(0, 200, 0), true)); //#008000
@@ -91,7 +41,8 @@ public class MainWorldTiles {
         Pallet.tiles.add(ImageHandler.GetTile(TileMap, 16, 80, "Still water", new Color(0, 174, 255), true)); //#0000FF
     }
 
-    private void LoadAnimatedTiles(BufferedImage TileMap){
+    @Override
+    public void LoadAnimatedTiles(BufferedImage TileMap){
         AnimatedTiles Water = new AnimatedTiles(3, "Water", new Color(0,0, 255));
         Water.States[0] = ImageHandler.GetAnimatedTile(TileMap, 0, 32);
         Water.States[1] = ImageHandler.GetAnimatedTile(TileMap, 16, 32);
