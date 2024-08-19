@@ -12,4 +12,7 @@ public class GameData {
     public static int SpriteSize = 16;
     public static int fps = 0;
     public static KeyboardHandler key;
+    public static final int TICKS_PER_SEC = 30;
+    public static final int MS_PER_TICK =  TICKS_PER_SEC / 1000;
+
 }

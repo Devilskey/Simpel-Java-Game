@@ -20,8 +20,10 @@ public class MainDisplay extends Canvas {
 
     long TimeLastFrame = 0;
 
-    public void UpdateDisplay() {
-        SceneManager.SceneLoaded.Update();
+
+
+    public void UpdateGame() {
+
     }
 
     public void Render() {

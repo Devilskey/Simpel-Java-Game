@@ -26,17 +26,14 @@ public class MainScene implements IScene {
         Entities[0] = new Player();
         Entities[1] = new Villager(new Vector2(64, 64), "src/assets/Scripts/VillagerHenk.txt");
     }
-    public void RenderScene(){
+
+    @Override
+    public void UpdateRender() {
         PixelArray = WorldTile.GetMapTiles(cam.pos.GetX(),cam.pos.GetY());
     }
 
     @Override
-    public void Update() {
-        RenderScene();
-        UpdateEntities();
-    }
-
-    public void UpdateEntities(){
+    public void UpdateGameLogic() {
         ColisionHandler.ResetNearestNPC();
         ColisionHandler.SetMap(PixelArray);
         ColisionHandler.SetEntities(Entities);

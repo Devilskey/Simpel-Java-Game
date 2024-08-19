@@ -1,6 +1,7 @@
 import Graphical_And_Rendering.MainDisplay;
 import Handlers.KeyboardHandler;
 import Handlers.SceneManager;
+import Handlers.TickHandler;
 import Scenes.MainScene.MainScene;
 import Statics.DebugSettings;
 import Statics.GameData;
@@ -14,6 +15,7 @@ public class Main {
         private static final JFrame MainWindow = new JFrame();
         private static MainDisplay display;
         private static final Vector2 ScreenSize = new Vector2(500, 500);
+        private static TickHandler TickHandler = new TickHandler();
 
         public static void main(String[] args) {
                 DebugSettings.StartDebugWindow();
@@ -41,7 +43,13 @@ public class Main {
         }
 
         static void GameLoop() {
-                display.UpdateDisplay();
+                SceneManager.UpdateRender();
                 display.Render();
+
+                if(TickHandler.timeForNewTick()) {
+                        SceneManager.UpdateGameLogic();
+                }else{
+                        TickHandler.TimeForNextTick();
+                }
         }
 }

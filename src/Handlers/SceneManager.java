@@ -9,4 +9,11 @@ public class SceneManager {
         SceneLoaded = scene;
     }
 
+    public static void UpdateGameLogic (){
+        SceneLoaded.UpdateGameLogic();
+    }
+
+    public static void UpdateRender (){
+      SceneLoaded.UpdateRender();
+    }
 }
