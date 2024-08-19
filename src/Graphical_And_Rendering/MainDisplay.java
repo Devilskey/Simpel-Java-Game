@@ -37,6 +37,7 @@ public class MainDisplay extends Canvas {
         if (TimeLastFrame == 0)
             TimeLastFrame = System.nanoTime();
         RenderSceneData SceneData = SceneManager.SceneLoaded.RenderdScene();
+
         BufferStrategy Buffer = this.getBufferStrategy();
         if (Buffer == null) {
             createBufferStrategy(3);

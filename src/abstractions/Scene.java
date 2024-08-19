@@ -17,31 +17,13 @@ public abstract class Scene {
     public Scene(){
     }
 
-    public void UpdateScene() {
-        RenderScene();
-        UpdateEntities();
-        Update();
-    };
 
-    public abstract void Update();
+    public abstract void UpdateRender();
 
-    public abstract void RenderScene();
+    public abstract void UpdateGameLogic();
 
     public void UpdateEntities() {
-        if(Entities == null)
-            return;
-        ColisionHandler.ResetNearestNPC();
-        ColisionHandler.SetMap(PixelArray);
-        ColisionHandler.SetEntities(Entities);
-        for (Entity entity : Entities) {
-            if (entity.CanMove) {
-                entity.ObstacleUp = ColisionHandler.CanCollide(entity.Position, MoveTo.Up);
-                entity.ObstacleDown = ColisionHandler.CanCollide(entity.Position, MoveTo.Down);
-                entity.ObstacleLeft = ColisionHandler.CanCollide(entity.Position, MoveTo.Left);
-                entity.ObstacleRight = ColisionHandler.CanCollide(entity.Position, MoveTo.Right);
-            }
-            entity.Update();
-        }
+
     }
 
     public RenderSceneData RenderdScene() {

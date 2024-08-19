@@ -29,14 +29,13 @@ public class RenderSceneData {
     }
 
     public void RenderImg (Graphics graphics){
-        if(Pixels == null)
-            return;
-
         int TilesPassedX = (int)(pos.GetX() / GameData.PixelSize);
         int TilesPassedY = (int)(pos.GetY() / GameData.PixelSize);
 
         int CamX = (int) (pos.GetX() - TilesPassedX * GameData.PixelSize);
         int CamY = (int) (pos.GetY() -  TilesPassedY * GameData.PixelSize);
+
+        System.out.println("CamY = " + pos.GetY());
 
         int x = 0;
         int y = 0;

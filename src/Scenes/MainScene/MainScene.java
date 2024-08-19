@@ -56,7 +56,8 @@ public class MainScene extends Scene {
                 ((Player) entity).NearNPC = ColisionHandler.GetNearestNPC();
         }
 
-        cam.MoveWithEntitie(Entities[0].Position);
+        cam.MoveWithEntitie(Entities.get(0).Position);
+        PositionInScene = cam.pos;
 
     }
 }

@@ -9,10 +9,8 @@ public class TickHandler {
     private LocalTime nextTick = LocalTime.now();
 
     public boolean timeForNewTick () {
-        System.out.println(GameData.MS_PER_TICK);
         if(nextTick.isBefore(LocalTime.now())) {
             nextTick = nextTick.plusSeconds(GameData.MS_PER_TICK);
-            System.out.println(nextTick.getSecond());
             return true;
         }
         return false;

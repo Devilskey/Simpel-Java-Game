@@ -113,6 +113,7 @@ public class Player extends Entity {
             if((int)PlayerPosition.GetY() == (int)MoveToPosition.GetY()) {
                 Position.SetX((int)MoveToPosition.GetX());
                 Position.SetY((int)MoveToPosition.GetY());
+                System.out.println("NewBlock");
                 return true;
             }
         return false;

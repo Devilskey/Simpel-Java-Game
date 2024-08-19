@@ -1,10 +1,10 @@
+import Debugger.Logger;
 import Graphical_And_Rendering.MainDisplay;
 import Handlers.Peripherals.KeyboardHandler;
 import Handlers.Peripherals.MouseInputHandler;
 import Handlers.SceneManager;
 import Handlers.TickHandler;
 import Scenes.MainScene.MainScene;
-import Scenes.TestScene.BlankScene;
 import Statics.DebugSettings;
 import Statics.GameData;
 import enums.LogLevel;
@@ -21,11 +21,13 @@ public class Main {
         private static TickHandler TickHandler = new TickHandler();
 
         public static void main(String[] args) {
+                Logger.LoggerInit();
                 DebugSettings.StartDebugWindow();
 
                 SceneManager.SwitchLoadedScene(new MainScene());
 
                 display = new MainDisplay();
+
 
                 MainWindow.add(display);
                 MainWindow.pack();
