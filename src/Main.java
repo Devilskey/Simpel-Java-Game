@@ -15,6 +15,8 @@ public class Main {
         private static final JFrame MainWindow = new JFrame();
         private static MainDisplay display;
         private static final Vector2 ScreenSize = new Vector2(500, 500);
+        private static final int currentHealth = 100; // HERE FOR TESTING/CHECKING
+        private static final int currentRuby = 69; // HERE FOR TESTING/CHECKING
 
         public static void main(String[] args) {
                 DebugSettings.StartDebugWindow();
@@ -25,8 +27,8 @@ public class Main {
 
                 UITexts uiTxtObjHealth = new UITexts(
                                 "TextObject_Health", 240, 50, 0, 0, 6,
-                                "HP | 69", "none", "none", "none", 2,
-                                "#ff0000", 32, "Arial", true, false);
+                                "HP | " + currentHealth, "none", "none", "none", 2,
+                                "#ff4422", 32, "Arial", true, false);
 
                 display.addUITextObject(uiTxtObjHealth);
 
@@ -36,6 +38,13 @@ public class Main {
                                 "none", "none", 1,
                                 false);
                 display.addUIImageObject(uiImgObjRuby);
+
+                UITexts uiTxtObjRubyCount = new UITexts(
+                        "TextObject_RubyCount", 240, 64, 64, 56, 4,
+                        " "+currentRuby, "none", "none", "none", 2,
+                        "#ff0000", 32, "Arial", true, false);
+
+                display.addUITextObject(uiTxtObjRubyCount);
 
                 MainWindow.add(display);
                 MainWindow.pack();
