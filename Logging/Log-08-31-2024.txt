@@ -1,0 +1,137 @@
+[Debug] [19:10:01] Log: { Created Log File: Logging/Log-08-31-2024.txt }
+[Debug] [19:10:01] Log: { Window Opened }
+[Debug] [19:10:01] Log: { Next Tick: 19:10:01.542571800 Tick per ms: 33 }
+[Debug] [19:16:18] Log: { Window Opened }
+[Debug] [19:16:18] Log: { Next Tick: 19:16:18.470880300 Tick per ms: 33 }
+[Debug] [19:16:57] Log: { Window Opened }
+[Debug] [19:16:57] Log: { Next Tick: 19:16:57.964174800 Tick per ms: 33 }
+[Debug] [19:17:42] Log: { Window Opened }
+[Debug] [19:17:42] Log: { Next Tick: 19:17:42.596684200 Tick per ms: 33 }
+[Debug] [19:19:37] Log: { Window Opened }
+[Debug] [19:19:37] Log: { Next Tick: 19:19:37.079479400 Tick per ms: 33 }
+[Debug] [19:20:25] Log: { Window Opened }
+[Debug] [19:20:25] Log: { Next Tick: 19:20:25.197474800 Tick per ms: 33 }
+[Debug] [19:30:04] Log: { Window Opened }
+[Debug] [19:30:04] Log: { Next Tick: 19:30:04.075665800 Tick per ms: 33 }
+[Debug] [19:30:26] Log: { Window Opened }
+[Debug] [19:30:26] Log: { Next Tick: 19:30:26.570882900 Tick per ms: 33 }
+[Debug] [19:31:06] Log: { Window Opened }
+[Debug] [19:31:06] Log: { Next Tick: 19:31:06.745261800 Tick per ms: 33 }
+[Debug] [19:31:28] Log: { Window Opened }
+[Debug] [19:31:28] Log: { Next Tick: 19:31:28.184044800 Tick per ms: 33 }
+[Debug] [19:31:52] Log: { Window Opened }
+[Debug] [19:31:52] Log: { Next Tick: 19:31:52.057363800 Tick per ms: 33 }
+[Debug] [19:32:08] Log: { Window Opened }
+[Debug] [19:32:08] Log: { Next Tick: 19:32:08.455501400 Tick per ms: 33 }
+[Debug] [19:33:20] Log: { Window Opened }
+[Debug] [19:33:20] Log: { Next Tick: 19:33:20.227445700 Tick per ms: 33 }
+[Debug] [19:34:06] Log: { Window Opened }
+[Debug] [19:34:06] Log: { Next Tick: 19:34:06.118262900 Tick per ms: 33 }
+[Debug] [19:34:33] Log: { Window Opened }
+[Debug] [19:34:33] Log: { Next Tick: 19:34:33.647663200 Tick per ms: 33 }
+[Debug] [19:34:46] Log: { Window Opened }
+[Debug] [19:34:46] Log: { Next Tick: 19:34:46.739462100 Tick per ms: 33 }
+[Debug] [19:35:58] Log: { Window Opened }
+[Debug] [19:35:58] Log: { Next Tick: 19:35:58.516513300 Tick per ms: 33 }
+[Debug] [19:36:05] Log: { Window Opened }
+[Debug] [19:36:06] Log: { Next Tick: 19:36:06.004304600 Tick per ms: 33 }
+[Debug] [19:37:08] Log: { Window Opened }
+[Debug] [19:37:08] Log: { Next Tick: 19:37:08.206481500 Tick per ms: 33 }
+[Debug] [19:37:41] Log: { Window Opened }
+[Debug] [19:37:41] Log: { Next Tick: 19:37:41.386283500 Tick per ms: 33 }
+[Debug] [19:38:51] Log: { Window Opened }
+[Debug] [19:38:51] Log: { Next Tick: 19:38:51.848796600 Tick per ms: 33 }
+[Debug] [19:41:39] Log: { Window Opened }
+[Debug] [19:41:39] Log: { Next Tick: 19:41:39.956720100 Tick per ms: 33 }
+[Debug] [19:42:01] Log: { Window Opened }
+[Debug] [19:42:01] Log: { Next Tick: 19:42:01.716812300 Tick per ms: 33 }
+[Debug] [19:42:52] Log: { Window Opened }
+[Debug] [19:42:53] Log: { Next Tick: 19:42:53.004326 Tick per ms: 33 }
+[Debug] [19:43:06] Log: { Window Opened }
+[Debug] [19:43:06] Log: { Next Tick: 19:43:06.899788600 Tick per ms: 33 }
+[Debug] [19:43:38] Log: { Window Opened }
+[Debug] [19:43:38] Log: { Next Tick: 19:43:38.352770200 Tick per ms: 33 }
+[Debug] [19:47:40] Log: { Window Opened }
+[Debug] [19:47:40] Log: { Next Tick: 19:47:40.131321200 Tick per ms: 33 }
+[Debug] [19:48:01] Log: { Window Opened }
+[Debug] [19:48:01] Log: { Next Tick: 19:48:01.378550300 Tick per ms: 33 }
+[Debug] [19:48:05] Log: { Window Opened }
+[Debug] [19:48:05] Log: { Next Tick: 19:48:05.816860200 Tick per ms: 33 }
+[Debug] [19:48:47] Log: { Window Opened }
+[Debug] [19:48:47] Log: { Next Tick: 19:48:47.523875800 Tick per ms: 33 }
+[Debug] [19:49:02] Log: { Window Opened }
+[Debug] [19:49:02] Log: { Next Tick: 19:49:02.644626700 Tick per ms: 33 }
+[Debug] [19:50:10] Log: { Window Opened }
+[Debug] [19:50:10] Log: { Next Tick: 19:50:10.595646900 Tick per ms: 33 }
+[Debug] [19:52:31] Log: { Window Opened }
+[Debug] [19:52:31] Log: { Next Tick: 19:52:31.712259400 Tick per ms: 33 }
+[Debug] [19:53:10] Log: { Window Opened }
+[Debug] [19:53:10] Log: { Next Tick: 19:53:10.972165400 Tick per ms: 33 }
+[Debug] [19:53:46] Log: { Window Opened }
+[Debug] [19:53:46] Log: { Next Tick: 19:53:46.244136900 Tick per ms: 33 }
+[Debug] [19:54:27] Log: { Window Opened }
+[Debug] [19:54:27] Log: { Next Tick: 19:54:27.249965300 Tick per ms: 33 }
+[Debug] [19:55:23] Log: { Window Opened }
+[Debug] [19:55:23] Log: { Next Tick: 19:55:23.121417500 Tick per ms: 33 }
+[Debug] [19:55:50] Log: { Window Opened }
+[Debug] [19:55:50] Log: { Next Tick: 19:55:50.992107 Tick per ms: 33 }
+[Debug] [19:56:45] Log: { Window Opened }
+[Debug] [19:56:45] Log: { Next Tick: 19:56:45.818301300 Tick per ms: 33 }
+[Debug] [20:11:13] Log: { Window Opened }
+[Debug] [20:11:13] Log: { Next Tick: 20:11:13.346493 Tick per ms: 33 }
+[Debug] [20:13:09] Log: { Window Opened }
+[Debug] [20:13:09] Log: { Next Tick: 20:13:09.928759300 Tick per ms: 33 }
+[Debug] [20:19:50] Log: { Window Opened }
+[Debug] [20:19:50] Log: { Next Tick: 20:19:50.430206500 Tick per ms: 33 }
+[Debug] [20:20:26] Log: { Window Opened }
+[Debug] [20:20:26] Log: { Next Tick: 20:20:26.305412700 Tick per ms: 33 }
+[Debug] [20:22:27] Log: { Window Opened }
+[Debug] [20:22:27] Log: { Next Tick: 20:22:27.360468900 Tick per ms: 33 }
+[Debug] [20:23:11] Log: { Window Opened }
+[Debug] [20:23:11] Log: { Next Tick: 20:23:11.438436600 Tick per ms: 33 }
+[Debug] [20:23:38] Log: { Window Opened }
+[Debug] [20:23:38] Log: { Next Tick: 20:23:38.255935600 Tick per ms: 33 }
+[Debug] [20:24:05] Log: { Window Opened }
+[Debug] [20:24:05] Log: { Next Tick: 20:24:05.509839500 Tick per ms: 33 }
+[Debug] [20:24:33] Log: { Window Opened }
+[Debug] [20:24:33] Log: { Next Tick: 20:24:33.556619500 Tick per ms: 33 }
+[Debug] [20:27:08] Log: { Window Opened }
+[Debug] [20:27:08] Log: { Next Tick: 20:27:08.699757100 Tick per ms: 33 }
+[Debug] [20:27:49] Log: { Window Opened }
+[Debug] [20:27:50] Log: { Next Tick: 20:27:50.010115 Tick per ms: 33 }
+[Debug] [20:29:37] Log: { Window Opened }
+[Debug] [20:29:37] Log: { Next Tick: 20:29:37.592071900 Tick per ms: 33 }
+[Debug] [20:30:19] Log: { Window Opened }
+[Debug] [20:30:19] Log: { Next Tick: 20:30:19.309649500 Tick per ms: 33 }
+[Debug] [20:31:13] Log: { Window Opened }
+[Debug] [20:31:13] Log: { Next Tick: 20:31:13.862287 Tick per ms: 33 }
+[Debug] [20:32:09] Log: { Window Opened }
+[Debug] [20:32:09] Log: { Next Tick: 20:32:09.953812200 Tick per ms: 33 }
+[Debug] [20:32:33] Log: { Window Opened }
+[Debug] [20:32:33] Log: { Next Tick: 20:32:33.087363500 Tick per ms: 33 }
+[Debug] [20:32:40] Log: { Window Opened }
+[Debug] [20:32:40] Log: { Next Tick: 20:32:40.064692400 Tick per ms: 33 }
+[Debug] [20:33:50] Log: { Window Opened }
+[Debug] [20:33:50] Log: { Next Tick: 20:33:50.791796400 Tick per ms: 33 }
+[Debug] [20:34:12] Log: { Window Opened }
+[Debug] [20:34:12] Log: { Next Tick: 20:34:12.197608700 Tick per ms: 33 }
+[Debug] [20:34:28] Log: { Window Opened }
+[Debug] [20:34:28] Log: { Next Tick: 20:34:28.586037800 Tick per ms: 33 }
+[Debug] [20:35:37] Log: { Window Opened }
+[Debug] [20:35:37] Log: { Next Tick: 20:35:37.248968200 Tick per ms: 33 }
+[Debug] [20:36:11] Log: { Window Opened }
+[Debug] [20:36:11] Log: { Next Tick: 20:36:11.091029100 Tick per ms: 33 }
+[Debug] [20:39:09] Log: { Window Opened }
+[Debug] [20:39:09] Log: { Next Tick: 20:39:09.099266600 Tick per ms: 33 }
+[Debug] [20:39:30] Log: { Window Opened }
+[Debug] [20:39:30] Log: { Next Tick: 20:39:30.629544300 Tick per ms: 33 }
+[Debug] [20:39:45] Log: { Window Opened }
+[Debug] [20:39:45] Log: { Next Tick: 20:39:45.689583300 Tick per ms: 33 }
+[Debug] [20:39:59] Log: { Window Opened }
+[Debug] [20:39:59] Log: { Next Tick: 20:39:59.676579500 Tick per ms: 33 }
+[Debug] [20:40:24] Log: { Window Opened }
+[Debug] [20:40:24] Log: { Next Tick: 20:40:24.092276400 Tick per ms: 33 }
+[Debug] [20:40:45] Log: { Window Opened }
+[Debug] [20:40:45] Log: { Next Tick: 20:40:45.872790500 Tick per ms: 33 }
+[Debug] [20:41:05] Log: { Window Opened }
+[Debug] [20:41:05] Log: { Next Tick: 20:41:05.517736 Tick per ms: 33 }

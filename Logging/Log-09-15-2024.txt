@@ -1,0 +1,55 @@
+[Debug] [11:55:41] Log: { Created Log File: Logging/Log-09-15-2024.txt }
+[Debug] [11:55:41] Log: { Window Opened }
+[Debug] [11:55:41] Log: { Next Tick: 11:55:41.559081900 Tick per ms: 33 }
+[Debug] [11:57:27] Log: { Window Opened }
+[Debug] [11:57:27] Log: { Next Tick: 11:57:27.552745300 Tick per ms: 33 }
+[Debug] [11:58:55] Log: { Window Opened }
+[Debug] [11:58:55] Log: { Next Tick: 11:58:55.929407200 Tick per ms: 33 }
+[Debug] [11:59:33] Log: { Window Opened }
+[Debug] [11:59:33] Log: { Next Tick: 11:59:33.827052400 Tick per ms: 33 }
+[Debug] [12:00:06] Log: { Window Opened }
+[Debug] [12:00:06] Log: { Next Tick: 12:00:06.980936700 Tick per ms: 33 }
+[Debug] [12:01:49] Log: { Window Opened }
+[Debug] [12:01:49] Log: { Next Tick: 12:01:49.201825300 Tick per ms: 33 }
+[Debug] [12:02:36] Log: { Window Opened }
+[Debug] [12:02:36] Log: { Next Tick: 12:02:36.785736400 Tick per ms: 33 }
+[Debug] [12:03:18] Log: { Window Opened }
+[Debug] [12:03:18] Log: { Next Tick: 12:03:18.929894500 Tick per ms: 33 }
+[Debug] [12:03:28] Log: { Window Opened }
+[Debug] [12:03:28] Log: { Next Tick: 12:03:28.472066800 Tick per ms: 33 }
+[Debug] [12:05:15] Log: { Window Opened }
+[Debug] [12:05:15] Log: { Next Tick: 12:05:15.460063600 Tick per ms: 33 }
+[Debug] [12:19:27] Log: { Window Opened }
+[Debug] [12:19:27] Log: { Next Tick: 12:19:27.639601100 Tick per ms: 33 }
+[Debug] [12:19:56] Log: { Window Opened }
+[Debug] [12:19:56] Log: { Next Tick: 12:19:56.382732100 Tick per ms: 33 }
+[Debug] [12:20:12] Log: { Window Opened }
+[Debug] [12:20:12] Log: { Next Tick: 12:20:12.774482300 Tick per ms: 33 }
+[Error] [12:20:12] Log: { AudioFile not found at path: src/emo/CookieClicker/Assets/click.wav }
+[Debug] [12:20:45] Log: { Window Opened }
+[Debug] [12:20:45] Log: { Next Tick: 12:20:45.738979300 Tick per ms: 33 }
+[Error] [12:20:45] Log: { AudioFile not found at path: src/emo/CookieClicker/Assets/click.wav }
+[Debug] [12:21:38] Log: { Window Opened }
+[Debug] [12:21:38] Log: { Next Tick: 12:21:38.970504800 Tick per ms: 33 }
+[Error] [12:21:39] Log: { AudioFile not found at path: src/emo/CookieClicker/Assets/click.wav }
+[Error] [12:21:40] Log: { Audio initialization failed }
+[Error] [12:21:40] Log: { Audio initialization failed }
+[Error] [12:21:41] Log: { Audio initialization failed }
+[Error] [12:21:41] Log: { Audio initialization failed }
+[Error] [12:21:42] Log: { Audio initialization failed }
+[Error] [12:21:42] Log: { Audio initialization failed }
+[Error] [12:21:43] Log: { Audio initialization failed }
+[Debug] [12:22:58] Log: { Window Opened }
+[Debug] [12:22:58] Log: { Next Tick: 12:22:58.207070600 Tick per ms: 33 }
+[Error] [12:22:58] Log: { AudioFile not found at path: src/emo/CookieClicker/Assets/click.wav }
+[Error] [12:22:59] Log: { Audio initialization failed }
+[Error] [12:22:59] Log: { Audio initialization failed }
+[Error] [12:22:59] Log: { Audio initialization failed }
+[Error] [12:22:59] Log: { Audio initialization failed }
+[Error] [12:23:00] Log: { Audio initialization failed }
+[Error] [12:23:00] Log: { Audio initialization failed }
+[Error] [12:23:00] Log: { Audio initialization failed }
+[Debug] [12:23:09] Log: { Window Opened }
+[Debug] [12:23:09] Log: { Next Tick: 12:23:09.256828200 Tick per ms: 33 }
+[Debug] [13:36:29] Log: { Window Opened }
+[Debug] [13:36:29] Log: { Next Tick: 13:36:29.830423100 Tick per ms: 33 }

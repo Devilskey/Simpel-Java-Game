@@ -1,0 +1,27 @@
+[Debug] [11:15:00] Log: { Created Log File: Logging/Log-09-01-2024.txt }
+[Debug] [11:15:00] Log: { Window Opened }
+[Debug] [11:15:00] Log: { Next Tick: 11:15:00.501367800 Tick per ms: 33 }
+[Debug] [11:15:20] Log: { Window Opened }
+[Debug] [11:15:20] Log: { Next Tick: 11:15:20.958852900 Tick per ms: 33 }
+[Debug] [11:18:14] Log: { Window Opened }
+[Debug] [11:18:14] Log: { Next Tick: 11:18:14.440090900 Tick per ms: 33 }
+[Debug] [11:18:37] Log: { Window Opened }
+[Debug] [11:18:37] Log: { Next Tick: 11:18:37.622306700 Tick per ms: 33 }
+[Debug] [11:18:55] Log: { Window Opened }
+[Debug] [11:18:55] Log: { Next Tick: 11:18:55.642901 Tick per ms: 33 }
+[Debug] [11:20:39] Log: { Window Opened }
+[Debug] [11:20:39] Log: { Next Tick: 11:20:39.521127400 Tick per ms: 33 }
+[Debug] [11:20:55] Log: { Window Opened }
+[Debug] [11:20:55] Log: { Next Tick: 11:20:55.074170600 Tick per ms: 33 }
+[Debug] [11:23:02] Log: { Window Opened }
+[Debug] [11:23:02] Log: { Next Tick: 11:23:02.841097900 Tick per ms: 33 }
+[Debug] [11:23:14] Log: { Window Opened }
+[Debug] [11:23:14] Log: { Next Tick: 11:23:14.938683400 Tick per ms: 33 }
+[Debug] [11:26:30] Log: { Window Opened }
+[Debug] [11:26:30] Log: { Next Tick: 11:26:30.085121400 Tick per ms: 33 }
+[Debug] [11:28:40] Log: { Window Opened }
+[Debug] [11:28:40] Log: { Next Tick: 11:28:40.710644300 Tick per ms: 33 }
+[Debug] [11:29:07] Log: { Window Opened }
+[Debug] [11:29:07] Log: { Next Tick: 11:29:07.127174200 Tick per ms: 33 }
+[Debug] [11:41:49] Log: { Window Opened }
+[Debug] [11:41:49] Log: { Next Tick: 11:41:49.442012300 Tick per ms: 33 }

@@ -1,0 +1,682 @@
+[Debug] [09:42:01] Log: { Created Log File: Logging/Log-08-25-2024.txt }
+[Debug] [09:42:01] Log: { Window Opened }
+[Debug] [09:42:01] Log: { Next Tick: 09:42:01.252225800 Tick per ms: 33 }
+[Debug] [09:42:01] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:42:01] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:47:42] Log: { Window Opened }
+[Debug] [09:47:42] Log: { Next Tick: 09:47:42.155214200 Tick per ms: 33 }
+[Debug] [09:47:42] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:47:42] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:48:00] Log: { Window Opened }
+[Debug] [09:48:00] Log: { Next Tick: 09:48:00.911127400 Tick per ms: 33 }
+[Debug] [09:48:00] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:48:00] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:48:31] Log: { Window Opened }
+[Debug] [09:48:31] Log: { Next Tick: 09:48:31.143654400 Tick per ms: 33 }
+[Debug] [09:48:31] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:48:31] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:48:41] Log: { Window Opened }
+[Debug] [09:48:41] Log: { Next Tick: 09:48:41.586884400 Tick per ms: 33 }
+[Debug] [09:48:41] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:48:41] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:48:52] Log: { Window Opened }
+[Debug] [09:48:52] Log: { Next Tick: 09:48:52.454907600 Tick per ms: 33 }
+[Debug] [09:48:52] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:48:52] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:49:00] Log: { Window Opened }
+[Debug] [09:49:00] Log: { Next Tick: 09:49:00.996289800 Tick per ms: 33 }
+[Debug] [09:49:01] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:49:01] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:49:08] Log: { Window Opened }
+[Debug] [09:49:08] Log: { Next Tick: 09:49:08.788966900 Tick per ms: 33 }
+[Debug] [09:49:08] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [09:49:08] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:24:05] Log: { Window Opened }
+[Debug] [10:24:05] Log: { Next Tick: 10:24:05.665001700 Tick per ms: 33 }
+[Debug] [10:24:05] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:24:05] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:24:23] Log: { Window Opened }
+[Debug] [10:24:23] Log: { Next Tick: 10:24:23.264528900 Tick per ms: 33 }
+[Debug] [10:24:23] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:24:23] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:29:16] Log: { Window Opened }
+[Debug] [10:29:16] Log: { Next Tick: 10:29:16.711527200 Tick per ms: 33 }
+[Debug] [10:29:16] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:29:16] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:31:23] Log: { Window Opened }
+[Debug] [10:31:23] Log: { Next Tick: 10:31:23.060301500 Tick per ms: 33 }
+[Debug] [10:31:23] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:31:23] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:31:48] Log: { Window Opened }
+[Debug] [10:31:48] Log: { Next Tick: 10:31:48.056058600 Tick per ms: 33 }
+[Debug] [10:31:48] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:31:48] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:32:22] Log: { Window Opened }
+[Debug] [10:32:22] Log: { Next Tick: 10:32:22.939606100 Tick per ms: 33 }
+[Debug] [10:32:22] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:32:22] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:33:16] Log: { Window Opened }
+[Debug] [10:33:16] Log: { Next Tick: 10:33:16.784089600 Tick per ms: 33 }
+[Debug] [10:33:16] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:33:16] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:40:52] Log: { Window Opened }
+[Debug] [10:40:52] Log: { Next Tick: 10:40:52.524028200 Tick per ms: 33 }
+[Debug] [10:40:52] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:40:52] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:42:01] Log: { Window Opened }
+[Debug] [10:42:01] Log: { Next Tick: 10:42:01.113530100 Tick per ms: 33 }
+[Debug] [10:42:01] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:42:01] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:42:27] Log: { Window Opened }
+[Debug] [10:42:27] Log: { Next Tick: 10:42:27.643140300 Tick per ms: 33 }
+[Debug] [10:42:27] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:42:27] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:43:38] Log: { Window Opened }
+[Debug] [10:43:38] Log: { Next Tick: 10:43:38.947881700 Tick per ms: 33 }
+[Debug] [10:43:38] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:43:38] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:44:13] Log: { Window Opened }
+[Debug] [10:44:13] Log: { Next Tick: 10:44:13.671748600 Tick per ms: 33 }
+[Debug] [10:44:13] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:44:13] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:45:30] Log: { Window Opened }
+[Debug] [10:45:30] Log: { Next Tick: 10:45:30.251056100 Tick per ms: 33 }
+[Debug] [10:45:30] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:45:30] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:46:01] Log: { Window Opened }
+[Debug] [10:46:01] Log: { Next Tick: 10:46:01.330703800 Tick per ms: 33 }
+[Debug] [10:46:01] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:46:01] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:46:25] Log: { Window Opened }
+[Debug] [10:46:25] Log: { Next Tick: 10:46:25.650317400 Tick per ms: 33 }
+[Debug] [10:46:25] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:46:25] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:47:10] Log: { Window Opened }
+[Debug] [10:47:10] Log: { Next Tick: 10:47:10.539992100 Tick per ms: 33 }
+[Debug] [10:47:10] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:47:10] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:49:24] Log: { Window Opened }
+[Debug] [10:49:24] Log: { Next Tick: 10:49:24.918582900 Tick per ms: 33 }
+[Debug] [10:49:24] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:49:24] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:49:57] Log: { Window Opened }
+[Debug] [10:49:57] Log: { Next Tick: 10:49:57.288209800 Tick per ms: 33 }
+[Debug] [10:49:57] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:49:57] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:57:40] Log: { Window Opened }
+[Debug] [10:57:40] Log: { Next Tick: 10:57:40.593025600 Tick per ms: 33 }
+[Debug] [10:57:40] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:57:40] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:58:08] Log: { Window Opened }
+[Debug] [10:58:08] Log: { Next Tick: 10:58:08.072954100 Tick per ms: 33 }
+[Debug] [10:58:08] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:58:08] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:59:20] Log: { Window Opened }
+[Debug] [10:59:20] Log: { Next Tick: 10:59:20.822138100 Tick per ms: 33 }
+[Debug] [10:59:20] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [10:59:20] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:05:36] Log: { Window Opened }
+[Debug] [11:05:36] Log: { Next Tick: 11:05:36.158263800 Tick per ms: 33 }
+[Debug] [11:05:36] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:05:36] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:07:16] Log: { Window Opened }
+[Debug] [11:07:16] Log: { Next Tick: 11:07:16.790578 Tick per ms: 33 }
+[Debug] [11:07:16] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:07:16] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:08:47] Log: { Window Opened }
+[Debug] [11:08:47] Log: { Next Tick: 11:08:47.935887400 Tick per ms: 33 }
+[Debug] [11:08:47] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:08:47] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:10:02] Log: { Window Opened }
+[Debug] [11:10:02] Log: { Next Tick: 11:10:02.355368200 Tick per ms: 33 }
+[Debug] [11:10:02] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:10:02] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:18:10] Log: { Window Opened }
+[Debug] [11:18:10] Log: { Next Tick: 11:18:10.950905400 Tick per ms: 33 }
+[Debug] [11:18:10] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:18:10] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:19:12] Log: { Window Opened }
+[Debug] [11:19:12] Log: { Next Tick: 11:19:12.974928200 Tick per ms: 33 }
+[Debug] [11:19:13] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:19:13] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:22:03] Log: { Window Opened }
+[Debug] [11:22:03] Log: { Next Tick: 11:22:03.567308600 Tick per ms: 33 }
+[Debug] [11:22:03] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:22:03] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:22:44] Log: { Window Opened }
+[Debug] [11:22:44] Log: { Next Tick: 11:22:44.407643900 Tick per ms: 33 }
+[Debug] [11:22:44] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:22:44] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:23:17] Log: { Window Opened }
+[Debug] [11:23:17] Log: { Next Tick: 11:23:17.249624800 Tick per ms: 33 }
+[Debug] [11:23:17] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:23:17] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:24:57] Log: { Window Opened }
+[Debug] [11:24:57] Log: { Next Tick: 11:24:57.855364300 Tick per ms: 33 }
+[Debug] [11:24:57] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:24:57] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:26:52] Log: { Window Opened }
+[Debug] [11:26:52] Log: { Next Tick: 11:26:52.249860200 Tick per ms: 33 }
+[Debug] [11:26:52] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:26:52] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:32:25] Log: { Window Opened }
+[Debug] [11:32:25] Log: { Next Tick: 11:32:25.340626800 Tick per ms: 33 }
+[Debug] [11:32:25] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:32:25] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:32:43] Log: { Window Opened }
+[Debug] [11:32:43] Log: { Next Tick: 11:32:43.221989400 Tick per ms: 33 }
+[Debug] [11:32:43] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:32:43] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:33:05] Log: { Window Opened }
+[Debug] [11:33:05] Log: { Next Tick: 11:33:05.942241300 Tick per ms: 33 }
+[Debug] [11:33:05] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:33:05] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:33:14] Log: { Window Opened }
+[Debug] [11:33:14] Log: { Next Tick: 11:33:14.454907200 Tick per ms: 33 }
+[Debug] [11:33:14] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:33:14] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:43:57] Log: { Window Opened }
+[Debug] [11:43:57] Log: { Next Tick: 11:43:57.523169800 Tick per ms: 33 }
+[Debug] [11:43:57] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:43:57] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:45:48] Log: { Window Opened }
+[Debug] [11:45:48] Log: { Next Tick: 11:45:48.632127500 Tick per ms: 33 }
+[Debug] [11:45:48] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:45:48] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:46:53] Log: { Window Opened }
+[Debug] [11:46:54] Log: { Next Tick: 11:46:54.024852800 Tick per ms: 33 }
+[Debug] [11:46:54] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:46:54] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:47:00] Log: { Window Opened }
+[Debug] [11:47:00] Log: { Next Tick: 11:47:00.041250200 Tick per ms: 33 }
+[Debug] [11:47:00] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:47:00] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:48:03] Log: { Window Opened }
+[Debug] [11:48:03] Log: { Next Tick: 11:48:03.380478 Tick per ms: 33 }
+[Debug] [11:48:03] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:48:03] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:53:06] Log: { Window Opened }
+[Debug] [11:53:06] Log: { Next Tick: 11:53:06.837085700 Tick per ms: 33 }
+[Debug] [11:53:06] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:53:06] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:53:24] Log: { Window Opened }
+[Debug] [11:53:24] Log: { Next Tick: 11:53:24.536810400 Tick per ms: 33 }
+[Debug] [11:53:24] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:53:24] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:56:04] Log: { Window Opened }
+[Debug] [11:56:04] Log: { Next Tick: 11:56:04.265246300 Tick per ms: 33 }
+[Debug] [11:56:04] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:56:04] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:58:54] Log: { Window Opened }
+[Debug] [11:58:54] Log: { Next Tick: 11:58:54.193613700 Tick per ms: 33 }
+[Debug] [11:58:54] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:58:54] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:59:26] Log: { Window Opened }
+[Debug] [11:59:27] Log: { Next Tick: 11:59:27.003029 Tick per ms: 33 }
+[Debug] [11:59:27] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [11:59:27] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [12:05:33] Log: { Window Opened }
+[Debug] [12:05:33] Log: { Next Tick: 12:05:33.559152800 Tick per ms: 33 }
+[Debug] [12:05:33] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [12:05:33] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [12:07:54] Log: { Window Opened }
+[Debug] [12:07:54] Log: { Next Tick: 12:07:54.737690400 Tick per ms: 33 }
+[Debug] [12:07:54] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [12:07:54] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [12:09:17] Log: { Window Opened }
+[Debug] [12:09:17] Log: { Next Tick: 12:09:17.796826700 Tick per ms: 33 }
+[Debug] [12:09:17] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [12:09:17] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [12:21:38] Log: { Window Opened }
+[Debug] [12:21:38] Log: { Next Tick: 12:21:38.458785700 Tick per ms: 33 }
+[Debug] [12:21:38] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [12:21:38] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [12:23:03] Log: { Window Opened }
+[Debug] [12:23:03] Log: { Next Tick: 12:23:03.369927600 Tick per ms: 33 }
+[Debug] [12:23:03] Log: { Can't read input file! }
+[Debug] [12:23:14] Log: { Window Opened }
+[Debug] [12:23:14] Log: { Next Tick: 12:23:14.347852100 Tick per ms: 33 }
+[Debug] [12:23:14] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [12:23:14] Log: { Can't read input file! }
+[Debug] [12:23:25] Log: { Window Opened }
+[Debug] [12:23:25] Log: { Next Tick: 12:23:25.157551400 Tick per ms: 33 }
+[Debug] [12:23:25] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [12:23:25] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:22:02] Log: { Window Opened }
+[Debug] [13:22:02] Log: { Next Tick: 13:22:02.544072300 Tick per ms: 33 }
+[Debug] [13:22:02] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:22:02] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:22:56] Log: { Window Opened }
+[Debug] [13:22:56] Log: { Next Tick: 13:22:56.187624400 Tick per ms: 33 }
+[Debug] [13:22:56] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:22:56] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:30:32] Log: { Window Opened }
+[Debug] [13:30:32] Log: { Next Tick: 13:30:32.432919100 Tick per ms: 33 }
+[Debug] [13:30:32] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:30:32] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:31:07] Log: { Window Opened }
+[Debug] [13:31:07] Log: { Next Tick: 13:31:07.345221600 Tick per ms: 33 }
+[Debug] [13:31:07] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:31:07] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:44:42] Log: { Window Opened }
+[Debug] [13:44:42] Log: { Next Tick: 13:44:42.563826800 Tick per ms: 33 }
+[Debug] [13:44:42] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:44:42] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:57:44] Log: { Window Opened }
+[Debug] [13:57:44] Log: { Next Tick: 13:57:44.348811600 Tick per ms: 33 }
+[Debug] [13:57:44] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:57:44] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:57:52] Log: { Window Opened }
+[Debug] [13:57:52] Log: { Next Tick: 13:57:52.615225300 Tick per ms: 33 }
+[Debug] [13:57:52] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:57:52] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:58:01] Log: { Window Opened }
+[Debug] [13:58:01] Log: { Next Tick: 13:58:01.367719300 Tick per ms: 33 }
+[Debug] [13:58:01] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:58:01] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:58:13] Log: { Window Opened }
+[Debug] [13:58:13] Log: { Next Tick: 13:58:13.680934900 Tick per ms: 33 }
+[Debug] [13:58:13] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:58:13] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:59:03] Log: { Window Opened }
+[Debug] [13:59:03] Log: { Next Tick: 13:59:03.654284 Tick per ms: 33 }
+[Debug] [13:59:03] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:59:03] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:59:14] Log: { Window Opened }
+[Debug] [13:59:14] Log: { Next Tick: 13:59:14.578052 Tick per ms: 33 }
+[Debug] [13:59:14] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [13:59:14] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:01:34] Log: { Window Opened }
+[Debug] [14:01:34] Log: { Next Tick: 14:01:34.672700100 Tick per ms: 33 }
+[Debug] [14:01:34] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:01:34] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:01:46] Log: { Window Opened }
+[Debug] [14:01:46] Log: { Next Tick: 14:01:46.652603500 Tick per ms: 33 }
+[Debug] [14:01:46] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:01:46] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:01:53] Log: { Window Opened }
+[Debug] [14:01:53] Log: { Next Tick: 14:01:53.701211500 Tick per ms: 33 }
+[Debug] [14:01:53] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:01:53] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:02:01] Log: { Window Opened }
+[Debug] [14:02:01] Log: { Next Tick: 14:02:01.572570700 Tick per ms: 33 }
+[Debug] [14:02:01] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:02:01] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:02:12] Log: { Window Opened }
+[Debug] [14:02:13] Log: { Next Tick: 14:02:13.002444800 Tick per ms: 33 }
+[Debug] [14:02:13] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:02:13] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:02:42] Log: { Window Opened }
+[Debug] [14:02:42] Log: { Next Tick: 14:02:42.501975900 Tick per ms: 33 }
+[Debug] [14:02:42] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:02:42] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:02:48] Log: { Window Opened }
+[Debug] [14:02:48] Log: { Next Tick: 14:02:48.542020100 Tick per ms: 33 }
+[Debug] [14:02:48] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:02:48] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:02:54] Log: { Window Opened }
+[Debug] [14:02:54] Log: { Next Tick: 14:02:54.832007500 Tick per ms: 33 }
+[Debug] [14:02:54] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:02:54] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:03:05] Log: { Window Opened }
+[Debug] [14:03:05] Log: { Next Tick: 14:03:05.634874 Tick per ms: 33 }
+[Debug] [14:03:05] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:03:05] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:07:31] Log: { Window Opened }
+[Debug] [14:07:31] Log: { Next Tick: 14:07:31.599938100 Tick per ms: 33 }
+[Debug] [14:07:31] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:07:31] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:08:13] Log: { Window Opened }
+[Debug] [14:08:13] Log: { Next Tick: 14:08:13.778614400 Tick per ms: 33 }
+[Debug] [14:08:13] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:08:13] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:08:48] Log: { Window Opened }
+[Debug] [14:08:48] Log: { Next Tick: 14:08:48.519499200 Tick per ms: 33 }
+[Debug] [14:08:48] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:08:48] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:14:13] Log: { Window Opened }
+[Debug] [14:14:13] Log: { Next Tick: 14:14:13.484489400 Tick per ms: 33 }
+[Debug] [14:14:13] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [14:14:13] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [20:14:20] Log: { Window Opened }
+[Debug] [20:14:20] Log: { Next Tick: 20:14:20.250434300 Tick per ms: 33 }
+[Debug] [20:14:20] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
+[Debug] [20:14:20] Log: { Player Sprite Data:  
+ Max Sprites States : 2 
+ Max Animation State : 3 }
