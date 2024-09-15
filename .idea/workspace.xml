@@ -5,57 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69840300-d08e-4cde-8b79-73072f3ee401" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Game/Scenes/MainScene/MainScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Handlers/Physics/CollisionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logging/Log-08-19-2024.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/Log-08-19-2024.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/Scripts/VillagerHenk.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Assets/Scripts/VillagerHenk.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Assets/logo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/test/NewDemoSpriteSheat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Assets/test/NewDemoSpriteSheat.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/test/WorstSpriteSheetEver.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Assets/test/WorstSpriteSheetEver.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/test/WorstSpriteSheetEver2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Assets/test/WorstSpriteSheetEver2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Debugger/DebugCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Debugger/DebugCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Debugger/DebugWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Debugger/DebugWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Debugger/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Debugger/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/NPC/Villager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Entities/NPC/Villager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Entities/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphical_And_Rendering/ImageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Graphical_And_Rendering/ImageHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphical_And_Rendering/MainDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Graphical_And_Rendering/MainDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphical_And_Rendering/WindowHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Graphical_And_Rendering/WindowHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/Files/ScriptsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Handlers/Files/ScriptsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/GameLogicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Handlers/GameLogicHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/Peripherals/KeyboardHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Handlers/Peripherals/KeyboardHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/Peripherals/MouseInputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Handlers/Peripherals/MouseInputHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/Peripherals/MouseMotionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Handlers/Peripherals/MouseMotionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/Physics/ColisionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/Physics/DirectionsVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Handlers/Physics/DirectionsVector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Handlers/SceneManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/TickHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Handlers/TickHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Interfaces/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/Entity/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Entity/NPC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IScene.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/SceneMapLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/abstractions/SceneMapLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logging/Log-09-15-2024.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/Log-09-15-2024.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Demo/CookieClicker/Assets/click.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Demo/CookieClicker/CookieClicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/CookieClicker/CookieClicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Scenes/CollisionTestScene/CollisionScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Scenes/CollisionTestScene/CollisionScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Scenes/MainScene/MainScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Scenes/MainScene/MainScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Scenes/MenuScene/MenuScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Scenes/MenuScene/MenuScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Statics/GameData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Statics/GameData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Statics/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Statics/Input.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scenes/MainScene/MainScene.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scenes/MainScene/MainWorldTiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Scenes/MainScene/MainWorldTiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scenes/MainScene/World/Map.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Scenes/MainScene/World/Map.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statics/DebugSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Statics/DebugSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statics/GameData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Statics/GameData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statics/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Statics/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/abstractions/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/abstractions/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/abstractions/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/abstractions/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/EntityType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/enums/EntityType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/KeyState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Enums/KeyState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/LogLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Enums/LogLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/MoveTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Enums/MoveTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Objects/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/RenderSceneData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Objects/RenderSceneData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/SizeObjects/Scale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Objects/SizeObjects/Scale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/SizeObjects/Vector2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Objects/SizeObjects/Vector2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/Sprites/Sprites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Objects/Sprites/Sprites.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/Tiles/AnimatedTiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Objects/Tiles/AnimatedTiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/Tiles/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Objects/Tiles/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/Tiles/TilePallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Objects/Tiles/TilePallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Audio/AudioObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Audio/AudioObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Debugger/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Debugger/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Graphical_And_Rendering/MainDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Graphical_And_Rendering/MainDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Handlers/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Handlers/SceneManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/UI/Objects/Buttons/UIElementButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/UI/Objects/Buttons/UIElementButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/UI/Objects/Buttons/UIElementImageButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/UI/Objects/Buttons/UIElementImageButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/abstractions/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/abstractions/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/abstractions/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/abstractions/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>

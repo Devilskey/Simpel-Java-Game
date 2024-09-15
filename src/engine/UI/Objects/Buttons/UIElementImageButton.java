@@ -51,7 +51,11 @@ public class UIElementImageButton extends UserInterface {
     @Override
     public void Update() {
         super.Update();
+        if(Function == null)
+            return;
+
         boolean HoversOverButton = HoverCheck();
+
 
         if(HoversOverButton) {
             if (Input.Key_Space && !AlreadyPressed) {
@@ -95,7 +99,6 @@ public class UIElementImageButton extends UserInterface {
         }
     }
 
-
     public void addWidth(int width){
         if(IsImageCentered){
             int AddWidth = width / 2;
@@ -105,6 +108,7 @@ public class UIElementImageButton extends UserInterface {
         }
         Image.setWidth(width);
     }
+
     public void addHeight(int height){
         if(IsImageCentered){
             int Addheight = height / 2;

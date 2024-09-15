@@ -6,6 +6,7 @@ import engine.Objects.SizeObjects.Scale;
 import java.awt.*;
 
 public class GameData {
+    public static String Title = "";
     public static Scale WindowSize;
     public static int PixelSize = 64;
     public static int SpriteSize = 16;
@@ -15,5 +16,6 @@ public class GameData {
     public static final long MS_PER_TICK = 1000 / TICKS_PER_SEC ;
     public static final String FontName = "Arial";
     public static int HighestFPSCount = 0;
+
 
 }

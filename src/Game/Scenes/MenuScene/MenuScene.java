@@ -35,7 +35,7 @@ public class MenuScene extends Scene {
         UIElementButton Start = new UIElementButton("Start Game", "BUTTON", new Vector2(100,200), UIEnum.midCenter ,Color.red);
         Start.SetFunction(() -> {
             System.out.println("Starting Game");
-            SceneManager.SwitchLoadedScene(new CollisionScene());
+            SceneManager.SwitchLoadedScene("CollisionTestScene");
         });
 
         UIElementButton Exit = new UIElementButton("Start Game", "BUTTON", new Vector2(100,300),UIEnum.midCenter, Color.red);

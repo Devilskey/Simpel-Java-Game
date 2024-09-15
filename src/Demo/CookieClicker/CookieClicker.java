@@ -1,7 +1,9 @@
 package Demo.CookieClicker;
 
+import Game.Scenes.CollisionTestScene.CollisionScene;
 import Game.Statics.GameData;
 import engine.Audio.AudioObject;
+import engine.Handlers.SceneManager;
 import engine.Objects.Camera;
 import engine.Objects.SizeObjects.Scale;
 import engine.Objects.SizeObjects.Vector2;
@@ -47,8 +49,14 @@ public class CookieClicker extends Scene {
         ClickMe = new UIElementImageButton(CookiePath, "Cookie", CookiePos, SizeCookie, UIEnum.topLeft);
         ClickMe.SetIsImageCentered(true);
 
-        //UIElementImage Image = new UIElementImage(CookiePos, SizeCookie, "src/Demo/CookieClicker/Assets/Cookie.png","TestImage");
+        UIElementButton NextScene = new UIElementButton("NextScene", "NextScene", new Vector2(15,20), UIEnum.topLeft, Color.RED);
 
+        NextScene.SetFunction(()-> {
+            SceneManager.SwitchLoadedScene("CollisionScene");
+        });
+
+        //UIElementImage Image = new UIElementImage(CookiePos, SizeCookie, "src/Demo/CookieClicker/Assets/Cookie.png","TestImage");
+        UI.add(NextScene);
         ClickMe.SetFunction(() -> {
             SoundList.Get("Click").PlaySound();
             this.CookiesClickedCounter += 1;
@@ -56,7 +64,6 @@ public class CookieClicker extends Scene {
 
             this.ClickMe.addHeight(5);
             this.ClickMe.addWidth(5);
-            System.out.println(this.CookieSizeIncreasedBy);
             if(this.CookieSizeIncreasedBy >= this.maxCookieSizeIncrease){
                 this.ClickMe.ChangeSize( new Scale(GameData.WindowSize.GetHeight() - 300, GameData.WindowSize.GetHeight() - 300));
                 this.ClickMe.ChangePosition( new Vector2(
@@ -64,7 +71,6 @@ public class CookieClicker extends Scene {
                         ((float) GameData.WindowSize.GetHeight() / 2)  - ((float) SizeCookie.GetHeight() / 2)));
 
                 this.CookieSizeIncreasedBy = 0;
-                System.out.println("Cookie Size Reset");
 
             }
         });

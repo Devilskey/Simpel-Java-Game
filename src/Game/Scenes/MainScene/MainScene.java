@@ -10,6 +10,9 @@ import Game.Entities.Player;
 import engine.Objects.SizeObjects.Scale;
 import engine.Objects.SizeObjects.Vector2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainScene extends Scene {
 
     private final MainWorldTiles WorldTile;
@@ -24,8 +27,8 @@ public class MainScene extends Scene {
         cam = new Camera(new Vector2 (0,0),
                 false);
 
-        Entities.add(new Player(64, 64));
-        Entities.add(new Villager(new Vector2(64, 64),
+        Entities.add("Player", new Player(64, 64));
+        Entities.add("Villager", new Villager(new Vector2(64, 64),
                 "src/assets/Scripts/VillagerHenk.txt"));
     }
 
@@ -38,8 +41,9 @@ public class MainScene extends Scene {
     public void UpdateGameLogic() {
         CollisionHandler.ResetNearestNPC();
         CollisionHandler.SetMap(PixelArray);
-        CollisionHandler.SetEntities(Entities);
-        for (Entity entity : Entities) {
+        ArrayList<Entity> EntitiesList = Entities.GetList();
+        CollisionHandler.SetEntities(EntitiesList);
+        for (Entity entity : EntitiesList) {
             if(entity.CanMove){
                 entity.ObstacleUp = CollisionHandler.CanCollide(entity.Position, MoveTo.Up);
                 entity.ObstacleDown = CollisionHandler.CanCollide(entity.Position, MoveTo.Down);
@@ -51,7 +55,7 @@ public class MainScene extends Scene {
                 ((Player) entity).NearNPC = CollisionHandler.GetNearestNPC();
         }
 
-        cam.MoveWithEntitie(Entities.get(0).Position);
+        cam.MoveWithEntitie(Entities.get("Player").Position);
         PositionInScene = cam.pos;
 
     }

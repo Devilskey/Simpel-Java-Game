@@ -40,8 +40,8 @@ public class CollisionScene extends Scene {
         float RandomX = 128; // new Random().nextFloat(0, WorldTile.GetSizeMap().GetX());
         float RandomY = 128; // new Random().nextFloat(0, WorldTile.GetSizeMap().GetY());
 
-        Entities.add(new Player(RandomX, RandomY));
-        Entities.add(new Villager(new Vector2(64, 64),
+        Entities.add("Player", new Player(RandomX, RandomY));
+        Entities.add("Villager", new Villager(new Vector2(64, 64),
                 "src/assets/Scripts/VillagerHenk.txt"));
 
         TextPos.TextContent = "X: 0, Y: 0";
@@ -62,11 +62,11 @@ public class CollisionScene extends Scene {
     public void UpdateGameLogic() {
         Collisions();
         health -= 0.1f;
-        cam.MoveWithEntitie(Entities.get(0).Position);
+        cam.MoveWithEntitie(Entities.get("Player").Position);
         PositionInScene = cam.pos;
 
         if(health < 0){
-            SceneManager.SwitchLoadedScene(new MenuScene());
+            SceneManager.SwitchLoadedScene("Menu");
         }
     }
 
@@ -79,7 +79,7 @@ public class CollisionScene extends Scene {
     }
 
     private void SetPlayerPositionText(){
-        Entity entity = Entities.get(0);
+        Entity entity = Entities.get("Player");
         if(entity.IsPlayer){
             TextPos.TextContent = "X: " + (int)entity.Position.GetX() + ", Y: " + (int)entity.Position.GetY();
         }
@@ -88,8 +88,8 @@ public class CollisionScene extends Scene {
     private void Collisions(){
         CollisionHandler.ResetNearestNPC();
         CollisionHandler.SetMap(PixelArray);
-        CollisionHandler.SetEntities(Entities);
-        for (Entity entity : Entities) {
+        CollisionHandler.SetEntities(Entities.GetList());
+        for (Entity entity : Entities.GetList()) {
             if(entity.CanMove){
                 entity.ObstacleUp = CollisionHandler.CanCollide(entity.Position, MoveTo.Up);
                 entity.ObstacleDown = CollisionHandler.CanCollide(entity.Position, MoveTo.Down);

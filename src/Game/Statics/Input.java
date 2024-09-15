@@ -8,6 +8,4 @@ public class Input {
     public static Boolean Key_D = false;
     public static Boolean Key_Space = false;
 
-    public static boolean Button_Spacebar = false;
-
 }

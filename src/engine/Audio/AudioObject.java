@@ -8,10 +8,20 @@ import java.io.File;
 import java.io.IOException;
 
 public class AudioObject implements IAudioObject {
-    protected final File AudioFile;
+    protected File AudioFile;
     protected Clip AudioClip;
+    public Boolean Loop = false;
 
     public AudioObject(String AudioFilePath) {
+        INIT(AudioFilePath);
+    }
+
+    public AudioObject(String AudioFilePath, Boolean Loop) {
+        this.Loop = Loop;
+        INIT(AudioFilePath);
+    }
+
+    private void INIT(String AudioFilePath){
         AudioFile = new File(AudioFilePath);
         if(!AudioFile.exists()) {
             Logger.Log(LogLevel.Error, "AudioFile not found at path: " + AudioFilePath);
@@ -37,6 +47,9 @@ public class AudioObject implements IAudioObject {
 
         AudioClip.stop();
         AudioClip.flush();
+
+        if(Loop)
+            AudioClip.loop(Clip.LOOP_CONTINUOUSLY);
         AudioClip.setFramePosition(0);
         AudioClip.start();
     }

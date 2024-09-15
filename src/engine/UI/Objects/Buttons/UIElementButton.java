@@ -27,29 +27,15 @@ public class UIElementButton extends UserInterface {
     private boolean AlreadyPressed = false;
 
     public UIElementButton (String content, String ButtonName, Vector2 ButtonPosition, UIEnum LocationOnScreen,Color buttonColor){
-        Name = ButtonName;
-        Position = ButtonPosition;
-
-
-        Scale SizeText = StaticUIFunctions.GetTextSize(content, Fontsize);
-
-        Vector2 LocationOnScreenVector = StaticUIFunctions.UIElementPosition(LocationOnScreen);
-        Vector2 AddToPosition = new Vector2(LocationOnScreenVector.GetX() - (SizeText.GetWidth() / 2) , LocationOnScreenVector.GetY() - SizeText.GetHeight());
-
-        Position.AddVector(AddToPosition);
-
-        Vector2 TextPosition = new Vector2(Position.GetX() + (Margin.GetWidth() / 2), Position.GetY() + (Margin.GetHeight() / 2));
-        Text = new UIElementText(content, TextPosition, Fontsize, 0, UIEnum.topLeft, Name + "-Text");
-
-
-        ButtonColor = buttonColor;
-        Background = new UIElementPanel(Position, TotalSize, ButtonColor,UIEnum.topLeft, ButtonName + "-Background");
-
-        ButtonHoverColor = DimColor(ButtonColor);
-
+        INIT(content,ButtonName, ButtonPosition, LocationOnScreen, buttonColor);
     }
 
     public UIElementButton (String content, String ButtonName, Vector2 ButtonPosition, UIEnum LocationOnScreen, Color buttonColor, Boolean activateOncePerPress){
+        INIT(content,ButtonName, ButtonPosition, LocationOnScreen, buttonColor);
+        ActivateOncePerPress = activateOncePerPress;
+    }
+
+    protected void INIT(String content, String ButtonName, Vector2 ButtonPosition, UIEnum LocationOnScreen, Color buttonColor){
         Name = ButtonName;
         Position = ButtonPosition;
         System.out.println(Position.GetX() + " X:Y " + Position.GetY() + " Button Text");
@@ -61,8 +47,6 @@ public class UIElementButton extends UserInterface {
 
         Position.AddVector(AddToPosition);
 
-        ActivateOncePerPress = activateOncePerPress;
-
         Vector2 TextPosition = new Vector2(Position.GetX() + (Margin.GetWidth() / 2), Position.GetY() + (Margin.GetHeight() / 2));
         Text = new UIElementText(content, TextPosition, Fontsize, 0, UIEnum.topLeft, Name + "-Text");
 
@@ -73,7 +57,6 @@ public class UIElementButton extends UserInterface {
         Background = new UIElementPanel(Position, TotalSize, ButtonColor,  UIEnum.topLeft, ButtonName + "-Background");
 
         ButtonHoverColor = DimColor(ButtonColor);
-
     }
 
     public void SetMargin(int x, int y){
@@ -95,6 +78,8 @@ public class UIElementButton extends UserInterface {
     public void Update() {
         super.Update();
         boolean HoversOverButton = HoverCheck();
+        if(Function == null)
+            return;
 
         if(HoversOverButton) {
             Background.ChangeColor(ButtonHoverColor);
