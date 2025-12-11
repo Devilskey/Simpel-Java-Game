@@ -1,15 +1,10 @@
 package Demo.CookieClicker;
 
-import Game.Scenes.CollisionTestScene.CollisionScene;
-import Game.Statics.GameData;
+import Statics.GameData;
 import engine.Audio.AudioObject;
-import engine.Handlers.SceneManager;
-import engine.Objects.Camera;
 import engine.Objects.SizeObjects.Scale;
 import engine.Objects.SizeObjects.Vector2;
-import engine.UI.Objects.Buttons.UIElementButton;
 import engine.UI.Objects.Buttons.UIElementImageButton;
-import engine.UI.Objects.UIElementImage;
 import engine.UI.Objects.UIElementPanel;
 import engine.UI.Objects.UIElementText;
 import engine.UI.enums.UIEnum;
@@ -49,14 +44,6 @@ public class CookieClicker extends Scene {
         ClickMe = new UIElementImageButton(CookiePath, "Cookie", CookiePos, SizeCookie, UIEnum.topLeft);
         ClickMe.SetIsImageCentered(true);
 
-        UIElementButton NextScene = new UIElementButton("NextScene", "NextScene", new Vector2(15,20), UIEnum.topLeft, Color.RED);
-
-        NextScene.SetFunction(()-> {
-            SceneManager.SwitchLoadedScene("CollisionScene");
-        });
-
-        //UIElementImage Image = new UIElementImage(CookiePos, SizeCookie, "src/Demo/CookieClicker/Assets/Cookie.png","TestImage");
-        UI.add(NextScene);
         ClickMe.SetFunction(() -> {
             SoundList.Get("Click").PlaySound();
             this.CookiesClickedCounter += 1;

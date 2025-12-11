@@ -1,9 +1,9 @@
-package Game.Entities;
+package Demo.Game.Entities;
 
+import Demo.Game.Entity.NPC;
 import engine.Handlers.Physics.CollisionHandler;
-import Game.Entity.NPC;
-import Game.Statics.GameData;
-import Game.Statics.Input;
+import Statics.GameData;
+import Statics.Input;
 import engine.abstractions.Entity;
 import engine.Enums.MoveTo;
 import engine.Objects.SizeObjects.Scale;
@@ -21,7 +21,7 @@ public class Player extends Entity {
     private boolean TalkState;
 
     public Player(float positionX, float positionY) {
-        super("src/Game/Assets/test/WorstSpriteSheetEver.png");
+        super("src/Demo.CookieClicker.Game/Assets/test/WorstSpriteSheetEver.png");
         //World Position not screen position
         Position = new Vector2(positionX, positionY);
         Size = new Scale(GameData.PixelSize, GameData.PixelSize);

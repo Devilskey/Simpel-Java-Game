@@ -1,0 +1,6 @@
+[Debug] [14:02:01] Log: { Created Log File: Logging/Log-02-02-2025.txt }
+[Debug] [14:02:01] Log: { Window Opened }
+[Debug] [14:02:01] Log: { Next Tick: 14:02:01.452081500 Tick per ms: 33 }
+[Debug] [14:04:02] Log: { Window Opened }
+[Debug] [14:04:02] Log: { Next Tick: 14:04:02.579662200 Tick per ms: 33 }
+[Error] [14:04:02] Log: { Error SceneLoadernull }

@@ -1,6 +1,6 @@
 package engine.UI.Objects.Buttons;
 
-import Game.Statics.Input;
+import Statics.Input;
 import engine.Handlers.Peripherals.MouseMotionHandler;
 import engine.Interfaces.Action;
 import engine.Objects.SizeObjects.Scale;
@@ -83,7 +83,7 @@ public class UIElementButton extends UserInterface {
 
         if(HoversOverButton) {
             Background.ChangeColor(ButtonHoverColor);
-            if (Input.Key_Space && !AlreadyPressed) {
+            if (Input.Mouse_Left && !AlreadyPressed) {
                 Function.execute();
                 AlreadyPressed = true;
                 return;

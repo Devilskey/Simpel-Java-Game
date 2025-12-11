@@ -1,17 +1,16 @@
-package Game.Scenes.MainScene;
+package Demo.Game.Scenes.MainScene;
 
-import Game.Entities.NPC.Villager;
+import Demo.Game.Entities.NPC.Villager;
+import Demo.Game.Entities.Player;
 import engine.Handlers.Physics.CollisionHandler;
 import engine.abstractions.Scene;
 import engine.abstractions.Entity;
 import engine.Enums.MoveTo;
 import engine.Objects.Camera;
-import Game.Entities.Player;
 import engine.Objects.SizeObjects.Scale;
 import engine.Objects.SizeObjects.Vector2;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainScene extends Scene {
 

@@ -1,0 +1,7 @@
+[Debug] [20:50:27] Log: { Created Log File: Logging/Log-04-25-2025.txt }
+[Debug] [20:50:27] Log: { Window Opened }
+[Info] [20:50:27] Log: { UI Engine Works }
+[Debug] [20:50:27] Log: { 1 }
+[Debug] [20:50:50] Log: { Window Opened }
+[Debug] [20:50:50] Log: { Next Tick: 20:50:50.717294500 Tick per ms: 33 }
+[Error] [20:50:50] Log: { Error SceneLoadernull }

@@ -1,6 +1,6 @@
 package engine.Handlers.Physics;
 
-import Game.Statics.GameData;
+import Statics.GameData;
 import engine.Enums.MoveTo;
 import engine.Objects.SizeObjects.Vector2;
 

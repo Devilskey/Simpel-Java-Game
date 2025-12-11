@@ -1,4 +1,4 @@
-package Game.Scenes.MainScene;
+package Demo.Game.Scenes.MainScene;
 
 import engine.Graphical_And_Rendering.ImageHandler;
 import engine.abstractions.SceneMapLoader;
@@ -10,7 +10,7 @@ import java.awt.image.BufferedImage;
 public class MainWorldTiles extends SceneMapLoader {
 
     public MainWorldTiles(){
-        super("src/Game.Scenes/MainScene/World/Map.png", "src/Game.Assets/test/NewDemoSpriteSheat.png");
+        super("src/Demo.CookieClicker.Game.Scenes/MainScene/World/Map.png", "src/Demo.CookieClicker.Game.Assets/test/NewDemoSpriteSheat.png");
     }
 
     public void LoadTiles(BufferedImage TileMap){

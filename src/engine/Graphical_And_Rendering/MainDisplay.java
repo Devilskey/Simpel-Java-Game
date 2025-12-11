@@ -4,7 +4,7 @@ import engine.Handlers.Peripherals.KeyboardHandler;
 import engine.Handlers.Peripherals.MouseInputHandler;
 import engine.Handlers.Peripherals.MouseMotionHandler;
 import engine.Handlers.SceneManager;
-import Game.Statics.GameData;
+import Statics.GameData;
 import engine.Objects.RenderSceneData;
 
 import java.awt.*;

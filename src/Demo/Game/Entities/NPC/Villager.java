@@ -1,8 +1,8 @@
-package Game.Entities.NPC;
+package Demo.Game.Entities.NPC;
 
-import Game.Entity.NPC;
+import Demo.Game.Entity.NPC;
 import engine.Handlers.Files.ScriptsHandler;
-import Game.Statics.GameData;
+import Statics.GameData;
 import engine.abstractions.Entity;
 import engine.Objects.SizeObjects.Scale;
 import engine.Objects.SizeObjects.Vector2;
@@ -16,7 +16,7 @@ public class Villager extends Entity implements NPC {
     private int OutputNumber = 0;
 
     public Villager(Vector2 pos, String TextFilePath) {
-        super("src/Game/Assets/test/WorstSpriteSheetEver.png");
+        super("src/Demo.CookieClicker.Game/Assets/test/WorstSpriteSheetEver.png");
         Position = pos;
         Size = new Scale(GameData.PixelSize, GameData.PixelSize);
         SpriteHandler.SetAnimationState(0, 1);
@@ -32,7 +32,7 @@ public class Villager extends Entity implements NPC {
     @Override
     public void Start() {
         try {
-            String[] NewLines = ScriptsHandler.GetNPCScript("src/Game/Assets/Scripts/VillagerHenk.txt");
+            String[] NewLines = ScriptsHandler.GetNPCScript("src/Demo.CookieClicker.Game/Assets/Scripts/VillagerHenk.txt");
             System.out.println(NewLines[0]);
             Lines = NewLines;
 

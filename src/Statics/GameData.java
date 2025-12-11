@@ -1,9 +1,7 @@
-package Game.Statics;
+package Statics;
 
 import engine.Handlers.Peripherals.KeyboardHandler;
 import engine.Objects.SizeObjects.Scale;
-
-import java.awt.*;
 
 public class GameData {
     public static String Title = "";

@@ -1,7 +1,7 @@
 package engine.abstractions;
 
 import engine.Debugger.DebugWindow;
-import Game.Statics.GameData;
+import Statics.GameData;
 import engine.Enums.MoveTo;
 import engine.Objects.SizeObjects.Scale;
 import engine.Objects.SizeObjects.Vector2;

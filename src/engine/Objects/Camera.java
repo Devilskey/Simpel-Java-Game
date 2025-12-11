@@ -2,7 +2,7 @@ package engine.Objects;
 
 import engine.Debugger.DebugWindow;
 import engine.Graphical_And_Rendering.WindowHandler;
-import Game.Statics.GameData;
+import Statics.GameData;
 import engine.Objects.SizeObjects.Vector2;
 
 public class Camera {

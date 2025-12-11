@@ -1,6 +1,6 @@
 package engine.Graphical_And_Rendering;
 
-import Game.Statics.GameData;
+import Statics.GameData;
 import engine.Objects.Tiles.Tile;
 
 import javax.imageio.ImageIO;

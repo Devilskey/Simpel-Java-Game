@@ -1,9 +1,8 @@
-package Game.Scenes.CollisionTestScene;
+package Demo.Game.Scenes.CollisionTestScene;
 
-import Game.Entities.NPC.Villager;
-import Game.Entities.Player;
-import Game.Scenes.MenuScene.MenuScene;
-import Game.Statics.GameData;
+import Demo.Game.Entities.NPC.Villager;
+import Demo.Game.Entities.Player;
+import Statics.GameData;
 import engine.Handlers.Physics.CollisionHandler;
 import engine.Handlers.SceneManager;
 import engine.UI.Objects.UIElementPanel;

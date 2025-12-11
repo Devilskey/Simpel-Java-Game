@@ -1,5 +1,5 @@
 package engine.UI.Objects.Buttons;
-import Game.Statics.Input;
+import Statics.Input;
 import engine.Handlers.Peripherals.MouseMotionHandler;
 import engine.Interfaces.Action;
 import engine.Objects.SizeObjects.Scale;
@@ -12,7 +12,6 @@ import java.awt.*;
 public class UIElementImageButton extends UserInterface {
     private Action Function;
     private Scale TotalSize;
-    private boolean ActivateOncePerPress;
     private boolean AlreadyPressed = false;
     private UIElementImage Image;
     private boolean IsImageCentered = false;
@@ -35,10 +34,6 @@ public class UIElementImageButton extends UserInterface {
 
     }
 
-    public void SetActivateOncePerPress (boolean activateOncePerPress) {
-        ActivateOncePerPress = activateOncePerPress;
-    }
-
     public void SetFunction (Action newFunction){
         Function = newFunction;
     }
@@ -58,12 +53,12 @@ public class UIElementImageButton extends UserInterface {
 
 
         if(HoversOverButton) {
-            if (Input.Key_Space && !AlreadyPressed) {
+            if (Input.Mouse_Left && !AlreadyPressed) {
                 Function.execute();
                 AlreadyPressed = true;
                 return;
             }
-            if(!Input.Key_Space && AlreadyPressed){
+            if(!Input.Mouse_Left && AlreadyPressed ){
                 AlreadyPressed = false;
                 return;
             }

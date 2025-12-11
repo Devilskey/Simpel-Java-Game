@@ -1,7 +1,7 @@
 package engine.Handlers;
 
 import engine.Debugger.DebugWindow;
-import Game.Statics.GameData;
+import Statics.GameData;
 
 import java.time.Duration;
 import java.time.LocalTime;

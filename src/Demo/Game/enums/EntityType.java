@@ -1,4 +1,4 @@
-package Game.enums;
+package Demo.Game.enums;
 
 public enum EntityType {
     Player,

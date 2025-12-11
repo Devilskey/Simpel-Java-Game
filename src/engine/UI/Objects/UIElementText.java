@@ -1,8 +1,7 @@
 package engine.UI.Objects;
 
-import Game.Statics.GameData;
+import Statics.GameData;
 import engine.UI.StaticUIFunctions;
-import engine.UI.UIElementLocation;
 import engine.UI.enums.UIEnum;
 import engine.abstractions.UserInterface;
 import engine.Objects.SizeObjects.Vector2;

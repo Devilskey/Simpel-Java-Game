@@ -1,0 +1,14 @@
+[Debug] [19:38:07] Log: { Created Log File: Logging/Log-02-14-2025.txt }
+[Debug] [19:38:08] Log: { Window Opened }
+[Debug] [19:38:08] Log: { Next Tick: 19:38:08.045144800 Tick per ms: 33 }
+[Error] [19:38:08] Log: { Error SceneLoadernull }
+[Debug] [19:40:01] Log: { Window Opened }
+[Debug] [19:40:01] Log: { Next Tick: 19:40:01.312193500 Tick per ms: 33 }
+[Debug] [19:42:58] Log: { Window Opened }
+[Debug] [19:42:58] Log: { Next Tick: 19:42:58.517621500 Tick per ms: 33 }
+[Debug] [19:43:05] Log: { Window Opened }
+[Debug] [19:43:05] Log: { Next Tick: 19:43:05.537372600 Tick per ms: 33 }
+[Error] [19:43:05] Log: { Error SceneLoadernull }
+[Debug] [19:44:58] Log: { Window Opened }
+[Info] [19:44:58] Log: { UI Engine Works }
+[Debug] [19:44:58] Log: { 1 }

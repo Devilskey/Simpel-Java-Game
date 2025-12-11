@@ -1,6 +1,6 @@
 package engine.UI;
 
-import Game.Statics.GameData;
+import Statics.GameData;
 import engine.Objects.SizeObjects.Vector2;
 
 public class UIElementLocation {

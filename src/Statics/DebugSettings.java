@@ -1,4 +1,4 @@
-package Game.Statics;
+package Statics;
 
 import engine.Debugger.DebugWindow;
 
@@ -19,5 +19,4 @@ public class DebugSettings {
             DebugWindow.log("Window Opened");
         }
     }
-
 }

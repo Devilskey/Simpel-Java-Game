@@ -1,16 +1,14 @@
 import Demo.CookieClicker.CookieClicker;
-import Game.Scenes.MenuScene.MenuScene;
+import Demo.Game.Scenes.CollisionTestScene.CollisionScene;
 import engine.Debugger.Logger;
 import engine.Graphical_And_Rendering.MainDisplay;
 import engine.Handlers.Peripherals.KeyboardHandler;
 import engine.Handlers.SceneManager;
 import engine.Handlers.TickHandler;
-import Game.Scenes.CollisionTestScene.CollisionScene;
-import Game.Statics.DebugSettings;
-import Game.Statics.GameData;
+import Statics.DebugSettings;
+import Statics.GameData;
 import engine.Objects.SizeObjects.Scale;
 import engine.Objects.SizeObjects.Vector2;
-import engine.Prefabs.Scene.NewScene.NewScene;
 
 import javax.swing.*;
 
@@ -44,7 +42,7 @@ public class Main {
                         GameLoop();
                         MainWindow.setTitle(GameData.Title + " Fps = " + GameData.fps + " TICKS PER MS: " + GameData.MS_PER_TICK);
 
-                        KeyboardHandler.CheckIfButtonMapIspressed();
+                        KeyboardHandler.CheckIfButtonMapIsPressed();
 
                 }
         }
@@ -52,7 +50,6 @@ public class Main {
         private static void AddScenes(){
                 // Add the scenes you want to use here to the scene manager
                 SceneManager.AddAvailableScene("CookieClicker", new CookieClicker());
-                // SceneManager.AddAvailableScene("CollisionScene", new CollisionScene());
 
         }
 

@@ -1,7 +1,6 @@
-package Game.Scenes.MenuScene;
+package Demo.Game.Scenes.MenuScene;
 
-import Game.Scenes.CollisionTestScene.CollisionScene;
-import Game.Statics.GameData;
+import Statics.GameData;
 import engine.Handlers.SceneManager;
 import engine.Objects.Camera;
 import engine.Objects.SizeObjects.Scale;
@@ -32,16 +31,16 @@ public class MenuScene extends Scene {
         UIElementText Title = new UIElementText("TEST MENU THE GAME", new Vector2(0,0),30, 1 , UIEnum.topCenter, "Title");
         Title.SetColor(Color.WHITE);
 
-        UIElementButton Start = new UIElementButton("Start Game", "BUTTON", new Vector2(100,200), UIEnum.midCenter ,Color.red);
+        UIElementButton Start = new UIElementButton("Start Demo.CookieClicker.Game", "BUTTON", new Vector2(100,200), UIEnum.midCenter ,Color.red);
         Start.SetFunction(() -> {
-            System.out.println("Starting Game");
+            System.out.println("Starting Demo.CookieClicker.Game");
             SceneManager.SwitchLoadedScene("CollisionTestScene");
         });
 
-        UIElementButton Exit = new UIElementButton("Start Game", "BUTTON", new Vector2(100,300),UIEnum.midCenter, Color.red);
+        UIElementButton Exit = new UIElementButton("Start Demo.CookieClicker.Game", "BUTTON", new Vector2(100,300),UIEnum.midCenter, Color.red);
         Exit.SetFunction(() -> {
 
-            System.out.println("Stopping Game");
+            System.out.println("Stopping Demo.CookieClicker.Game");
 
             System.exit(1);
         });

@@ -1,4 +1,4 @@
-package Game.Scenes.CollisionTestScene;
+package Demo.Game.Scenes.CollisionTestScene;
 
 import engine.Graphical_And_Rendering.ImageHandler;
 import engine.abstractions.SceneMapLoader;
@@ -8,7 +8,7 @@ import java.awt.image.BufferedImage;
 
 public class CollisionTilSet extends SceneMapLoader {
     public CollisionTilSet(){
-        super("src/Game/Scenes/CollisionTestScene/Map/Map.png", "src/Game/Assets/test/NewDemoSpriteSheat.png");
+        super("src/Demo/CookieClicker.Game/Scenes/CollisionTestScene/Map/Map.png", "src/Demo/CookieClicker/Game/Assets/test/NewDemoSpriteSheat.png");
     }
 
     public void LoadTiles(BufferedImage TileMap){
@@ -18,6 +18,7 @@ public class CollisionTilSet extends SceneMapLoader {
     }
 
     @Override
-    public void LoadAnimatedTiles(BufferedImage TileMap){
+    public void LoadAnimatedTiles(BufferedImage TileMap)
+    {
     }
 }
