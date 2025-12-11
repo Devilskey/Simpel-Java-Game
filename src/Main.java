@@ -1,20 +1,18 @@
 import Demo.CookieClicker.CookieClicker;
-import Game.Scenes.MenuScene.MenuScene;
+import Demo.Game.Scenes.CollisionTestScene.CollisionScene;
 import engine.Debugger.Logger;
 import engine.Graphical_And_Rendering.MainDisplay;
 import engine.Handlers.Peripherals.KeyboardHandler;
 import engine.Handlers.SceneManager;
 import engine.Handlers.TickHandler;
-import Game.Scenes.CollisionTestScene.CollisionScene;
-import Game.Statics.DebugSettings;
-import Game.Statics.GameData;
+import Statics.DebugSettings;
+import Statics.GameData;
 import engine.Objects.SizeObjects.Scale;
 import engine.Objects.SizeObjects.Vector2;
 
 import javax.swing.*;
 
 public class Main {
-        private static final String title = "Hello world";
         private static final JFrame MainWindow = new JFrame();
         private static MainDisplay display;
         private static final Vector2 ScreenSize = new Vector2(1080, 720);
@@ -25,8 +23,8 @@ public class Main {
                 DebugSettings.StartDebugWindow();
                 TickHandler = new TickHandler();
                 GameData.WindowSize = new Scale((int) ScreenSize.GetX(), (int) ScreenSize.GetY());
-
-                SceneManager.SwitchLoadedScene(new CookieClicker());
+                AddScenes();
+                SceneManager.LoadFirstScene();
 
                 display = new MainDisplay();
 
@@ -42,11 +40,17 @@ public class Main {
 
                 while (MainWindow.isVisible()) {
                         GameLoop();
-                        MainWindow.setTitle(title + " Fps = " + GameData.fps + " TICKS PER MS: " + GameData.MS_PER_TICK);
+                        MainWindow.setTitle(GameData.Title + " Fps = " + GameData.fps + " TICKS PER MS: " + GameData.MS_PER_TICK);
 
-                        KeyboardHandler.CheckIfButtonMapIspressed();
+                        KeyboardHandler.CheckIfButtonMapIsPressed();
 
                 }
+        }
+
+        private static void AddScenes(){
+                // Add the scenes you want to use here to the scene manager
+                SceneManager.AddAvailableScene("CookieClicker", new CookieClicker());
+
         }
 
         static void GameLoop() {

@@ -1,6 +1,6 @@
 package engine.UI;
 
-import Game.Statics.GameData;
+import Statics.GameData;
 import engine.Objects.SizeObjects.Scale;
 import engine.Objects.SizeObjects.Vector2;
 import engine.UI.enums.UIEnum;
@@ -9,7 +9,6 @@ import java.awt.*;
 import java.awt.font.FontRenderContext;
 import java.awt.font.TextLayout;
 import java.awt.geom.AffineTransform;
-import java.awt.image.BufferedImage;
 
 public class StaticUIFunctions {
 

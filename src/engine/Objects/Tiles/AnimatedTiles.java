@@ -1,6 +1,6 @@
 package engine.Objects.Tiles;
 
-import Game.Statics.GameData;
+import Statics.GameData;
 
 import java.awt.*;
 

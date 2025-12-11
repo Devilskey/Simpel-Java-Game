@@ -1,8 +1,8 @@
 package engine.Handlers.Physics;
 
 import engine.Handlers.GameLogicHandler;
-import Game.Entity.NPC;
-import Game.Statics.GameData;
+import Demo.Game.Entity.NPC;
+import Statics.GameData;
 import engine.abstractions.Entity;
 import engine.Enums.MoveTo;
 import engine.Objects.SizeObjects.Vector2;

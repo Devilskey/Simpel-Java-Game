@@ -1,7 +1,7 @@
 package engine.Debugger;
 
-import Game.Statics.DebugSettings;
-import Game.Statics.GameData;
+import Statics.DebugSettings;
+import Statics.GameData;
 
 public class DebugCMD {
     public static void CMD (String cmdText){

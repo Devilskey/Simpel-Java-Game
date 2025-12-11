@@ -2,8 +2,8 @@ package engine.abstractions;
 
 import engine.Debugger.Logger;
 import engine.Handlers.GameLogicHandler;
-import Game.Statics.DebugSettings;
-import Game.Statics.GameData;
+import Statics.DebugSettings;
+import Statics.GameData;
 import engine.Enums.LogLevel;
 import engine.Objects.SizeObjects.Scale;
 import engine.Objects.SizeObjects.Vector2;

@@ -1,12 +1,7 @@
 package engine.Prefabs.Scene.NewScene;
 
-import engine.Handlers.Physics.CollisionHandler;
 import engine.abstractions.Scene;
-import engine.abstractions.Entity;
-import engine.Enums.MoveTo;
 import engine.Objects.Camera;
-import Game.Entities.Player;
-import engine.Objects.SizeObjects.Vector2;
 
 public class NewScene extends Scene {
 

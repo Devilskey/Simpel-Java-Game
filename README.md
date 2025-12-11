@@ -1,1 +1,1 @@
-# Simpel-Java-Game
+# Simpel-Java-Demo.CookieClicker.Game

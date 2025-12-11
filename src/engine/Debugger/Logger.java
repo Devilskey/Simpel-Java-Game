@@ -50,7 +50,7 @@ public class Logger {
             LogWriter.append(PreparedMessage);
             LogWriter.newLine();
             LogWriter.close();
-
+            System.out.println(PreparedMessage);
 
         } catch (IOException e) {
             System.out.println(e.getMessage());

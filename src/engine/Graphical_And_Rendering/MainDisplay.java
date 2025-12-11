@@ -4,7 +4,7 @@ import engine.Handlers.Peripherals.KeyboardHandler;
 import engine.Handlers.Peripherals.MouseInputHandler;
 import engine.Handlers.Peripherals.MouseMotionHandler;
 import engine.Handlers.SceneManager;
-import Game.Statics.GameData;
+import Statics.GameData;
 import engine.Objects.RenderSceneData;
 
 import java.awt.*;
@@ -31,9 +31,10 @@ public class MainDisplay extends Canvas {
     }
 
     public void Render() {
+
         if (TimeLastFrame == 0)
             TimeLastFrame = System.nanoTime();
-        RenderSceneData SceneData = SceneManager.SceneLoaded.RenderdScene();
+        RenderSceneData SceneData = SceneManager.SceneLoaded.RenderScene();
 
         BufferStrategy Buffer = this.getBufferStrategy();
         if (Buffer == null) {
@@ -42,6 +43,8 @@ public class MainDisplay extends Canvas {
         }
 
         Graphics graphics = Buffer.getDrawGraphics();
+        graphics.fillRect(0, 0, GameData.WindowSize.GetWidth(), GameData.WindowSize.GetHeight());
+
         SceneData.RenderImg(graphics);
         SceneData.RenderEntities(graphics);
         SceneData.RenderUI(graphics);

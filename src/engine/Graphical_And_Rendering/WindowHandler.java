@@ -1,6 +1,6 @@
 package engine.Graphical_And_Rendering;
 
-import Game.Statics.GameData;
+import Statics.GameData;
 
 public class WindowHandler {
     public static int GetCenterX (){

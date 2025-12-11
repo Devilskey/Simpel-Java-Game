@@ -1,7 +1,7 @@
 package engine.Objects;
 
 import engine.Handlers.GameLogicHandler;
-import Game.Statics.GameData;
+import Statics.GameData;
 import engine.UI.UIHandler;
 import engine.abstractions.Entity;
 import engine.abstractions.UserInterface;
